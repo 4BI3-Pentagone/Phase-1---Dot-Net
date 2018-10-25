@@ -8,5 +8,6 @@ namespace Domain
 {
     class Course
     {
+        testc ;
     }
 }
