@@ -8,6 +8,13 @@ namespace Domain
 {
      public class Patient
     {
-        public int IdPatient { get; set; }
+        public int idPatient { get; set; }
+        public String firstName { get; set; }
+        public String lastName { get; set; }
+        public DateTime birthDate { get; set; }
+        public String adress { get; set; }
+        public String email { get; set; }
+        public String password { get; set; }
+        public IEnumerator<Gender> gender { get; set; }
     }
 }
