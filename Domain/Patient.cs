@@ -8,5 +8,6 @@ namespace Domain
 {
     class Patient
     {
+        int idPatient;
     }
 }
