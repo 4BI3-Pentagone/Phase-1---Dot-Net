@@ -12,6 +12,6 @@ namespace Domain
         public ICollection<Appointment> Visits { get; set; }
 
         public int MyProperty { get; set; }
-        emel here;
+       
     }
 }
