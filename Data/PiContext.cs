@@ -10,12 +10,12 @@ namespace Data
 {
     public class PiContext : DbContext
     {
-        public PiContext() : base("PIDB")
+        public PiContext() : base("Name=PIDB")
         {
             Database.SetInitializer(new ContexInit());
          }
         public DbSet<Patient> Patients { get; set; }
-        public DbSet<Doctor> Doctors{ get; set; }
+     //   public DbSet<Doctor> Doctors{ get; set; }
 
 
 
@@ -25,10 +25,8 @@ namespace Data
         protected override void Seed(PiContext context)
         {
             List<Patient> patients = new List<Patient>() {
-                new Patient {idPatient=1,
-                adress="ddd"
-
-                }
+                new Patient {PatientId=1
+                            }
                
             };
             context.Patients.AddRange(patients);
