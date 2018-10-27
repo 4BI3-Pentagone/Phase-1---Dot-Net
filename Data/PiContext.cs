@@ -15,7 +15,8 @@ namespace Data
             Database.SetInitializer(new ContexInit());
          }
         public DbSet<Patient> Patients { get; set; }
-     //   public DbSet<Doctor> Doctors{ get; set; }
+       public DbSet<Doctor> Doctors{ get; set; }
+        public DbSet<Course> Course { get; set; }
 
 
 

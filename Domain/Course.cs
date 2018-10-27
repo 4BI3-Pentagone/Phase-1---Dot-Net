@@ -8,7 +8,7 @@ namespace Domain
 {
     public class Course
     {
-        public int IdCourse { get; set; }
+        public int CourseId { get; set; }
         public ICollection<Appointment> Visits { get; set; }
 
     }

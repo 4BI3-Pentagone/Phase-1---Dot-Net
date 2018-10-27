@@ -8,7 +8,7 @@ namespace Domain
 {
     public class Message
     {
-        public int IdMessage { get; set; }
+        public int MessageId { get; set; }
         public String Content { get; set; }
         public virtual int sender { get; set; }
         public virtual int receiver { get; set; }

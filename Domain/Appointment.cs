@@ -9,7 +9,7 @@ namespace Domain
     public enum State { Done, InProgress , Cancelled }
     public  class Appointment
     {
-        public int IdApp{ get; set; }
+        public int AppointmentId { get; set; }
         public DateTime Date { get; set; }
         public String Disease { get; set; }
         public State state { get; set; }
