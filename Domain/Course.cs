@@ -9,7 +9,7 @@ namespace Domain
     public class Course
     {
         public int IdCourse { get; set; }
-        public ICollection<Appointment> Vists { get; set; }
+        public ICollection<Appointment> Visits { get; set; }
 
     }
 }
