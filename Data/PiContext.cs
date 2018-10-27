@@ -10,8 +10,7 @@ namespace Data
 {
     public class PiContext : DbContext
     {
-        //pull souhe
-        //123
+        //puull 1245
         public PiContext() : base("Name=PIDB")
         {
             Database.SetInitializer(new ContexInit());
