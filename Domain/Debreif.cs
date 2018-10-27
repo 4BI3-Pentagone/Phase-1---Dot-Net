@@ -9,5 +9,8 @@ namespace Domain
     public class Debreif
     {
         public int IdDebreif { get; set; }
+        public String FinalDisease { get; set; }
+        public String Description { get; set; }
+        public virtual Appointment appointment { get; set; }
     }
 }

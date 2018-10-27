@@ -1,0 +1,12 @@
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Domain.dll.config
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Domain.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Domain.pdb
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.xml
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\obj\Debug\Domain.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\obj\Debug\Domain.pdb
