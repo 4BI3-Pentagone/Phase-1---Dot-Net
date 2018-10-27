@@ -10,6 +10,6 @@ namespace Data.Configurations
 {
     class CourseConfig: EntityTypeConfiguration<Domain.Course>
     {
-
+          
     }
 }

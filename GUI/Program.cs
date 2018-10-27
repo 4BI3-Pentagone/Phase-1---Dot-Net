@@ -17,8 +17,6 @@ namespace GUI
             Patient p = new Patient()
             {
                 PatientId = 12
-               
-
 
             };
             ctx.Patients.Add(p);
