@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    class Appointment
+    public enum State { Done, InProgress , Cancelled }
+    public  class Appointment
     {
+        public int IdApp{ get; set; }
+        public DateTime Date { get; set; }
+        public String Disease { get; set; }
+        public State state { get; set; }
+        public virtual Patient patient { get; set; }
+        public virtual Doctor doctor { get; set; }
+
     }
 }

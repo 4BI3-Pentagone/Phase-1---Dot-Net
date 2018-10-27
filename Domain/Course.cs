@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    class Course
+    public class Course
     {
-        testc ;
+        public int IdCourse { get; set; }
+        public ICollection<Appointment> Vists { get; set; }
+
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
+    public enum Gender { male , female}
      public class Patient
     {
         public int idPatient { get; set; }
@@ -15,6 +16,7 @@ namespace Domain
         public String adress { get; set; }
         public String email { get; set; }
         public String password { get; set; }
-        public IEnumerator<> gender { get; set; }
+        public Gender gender { get; set; }
+        public virtual Course course { get; set; }
     }
 }
