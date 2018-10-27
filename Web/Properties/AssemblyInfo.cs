@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de 
 // l’ensemble d’attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("Web")]
+[assembly: AssemblyTitle("WEB")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Web")]
+[assembly: AssemblyProduct("WEB")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Le GUID suivant est pour l’ID de la typelib si ce projet est exposé à COM
-[assembly: Guid("a661f434-d31b-4a18-8e1d-e70087a11298")]
+[assembly: Guid("b780a3ec-650a-465e-9fd9-e07dfc680a1e")]
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 //
