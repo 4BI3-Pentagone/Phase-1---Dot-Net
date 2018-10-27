@@ -8,5 +8,9 @@ namespace Domain
 {
     public class Repport
     {
+        public int RepportId { get; set; }
+        public String ReppotName { get; set; }
+        public virtual Course course { get; set; }
+
     }
 }

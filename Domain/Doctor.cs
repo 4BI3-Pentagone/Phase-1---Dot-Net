@@ -9,7 +9,7 @@ namespace Domain
     public enum Speciality { Generalist , Specialist}
     public class Doctor
     {
-        public int idDoctor { get; set; }
+        public int DoctorId { get; set; }
         public String firstName { get; set; }
         public String lastName { get; set; }
         public DateTime birthDate { get; set; }

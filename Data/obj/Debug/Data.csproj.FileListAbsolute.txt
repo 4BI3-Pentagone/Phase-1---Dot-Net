@@ -1,0 +1,15 @@
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Data.dll.config
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Data.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Data.pdb
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Domain.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\EntityFramework.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Domain.pdb
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\EntityFramework.xml
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\fr\EntityFramework.SqlServer.resources.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\obj\Debug\Data.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\obj\Debug\Data.pdb
