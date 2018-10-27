@@ -8,5 +8,6 @@ namespace Domain
 {
     public class Debreif
     {
+        public int IdDebreif { get; set; }
     }
 }
