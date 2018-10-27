@@ -13,7 +13,7 @@ namespace Data.Configurations
 
         public CourseConfig()
         {
-          
+         // pull here
             //One to Many
           /*  WithMany(pr => pr.Visits)
             .HasForeignKey(d => d.CourseId)
