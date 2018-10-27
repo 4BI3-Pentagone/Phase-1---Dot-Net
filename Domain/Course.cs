@@ -11,6 +11,6 @@ namespace Domain
         public int IdCourse { get; set; }
         public ICollection<Appointment> Visits { get; set; }
 
-        testc git
+        public int MyProperty { get; set; }
     }
 }
