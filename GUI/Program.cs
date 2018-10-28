@@ -14,14 +14,9 @@ namespace GUI
         static void Main(string[] args)
         {
             PiContext ctx = new PiContext();
-            Patient p = new Patient()
-            {
-                PatientId = 12
-
-            };
-            ctx.Patients.Add(p);
-            ctx.SaveChanges();
-
+           /* User u = new User { UserId = 2 };
+            ctx.Users.Add(u);
+            ctx.SaveChanges();*/
         }
     }
 }

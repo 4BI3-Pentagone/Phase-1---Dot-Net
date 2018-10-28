@@ -15,8 +15,10 @@ namespace Data
         {
             Database.SetInitializer(new ContexInit());
          }
-        public DbSet<Patient> Patients { get; set; }
-        public DbSet<Doctor> Doctors{ get; set; }
+        //  public DbSet<Patient> Patients { get; set; }
+        //  public DbSet<Doctor> Doctors{ get; set; }
+          public DbSet<User> Users{ get; set; }
+
         public DbSet<Course> Courses { get; set; }
         public DbSet<Chat> Chats { get; set; }
         public DbSet<Message> Messages { get; set; }
@@ -36,13 +38,13 @@ namespace Data
     {
         protected override void Seed(PiContext context)
         {
-            List<Patient> patients = new List<Patient>() {
+         /*   List<Patient> patients = new List<Patient>() {
                 new Patient {PatientId=1
                             }
                
             };
             context.Patients.AddRange(patients);
-            context.SaveChanges();
+            context.SaveChanges();*/
         }
     }
 }
