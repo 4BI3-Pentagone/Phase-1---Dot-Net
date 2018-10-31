@@ -24,3 +24,9 @@ C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\b
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\obj\Debug\Domain.dll
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\obj\Debug\Domain.pdb
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
