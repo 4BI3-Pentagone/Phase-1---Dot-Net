@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Domain;
+using ServicePattern;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,26 +11,27 @@ namespace WebUI.Controllers
     public class HomeController : Controller
     {
 
-        public string AddUser()
+        public async System.Threading.Tasks.Task<string> AddUser()
         {
-            // s = new AppService();
-           // s.TestContext();
+            //  AppService s = new AppService();
+          //  s.TestContext();
 
 
-            //UserService us = new UserService();
-            //var user = new ApplicationUser
-            //{
-            //    UserName = "TestUser",
-            //    Email = "TestUser@test.com"
-            //};
+            ServiceUser us = new ServiceUser();
+            var user = new User
+            {
+                UserName = "TestUser",
+                Email = "TestUser@test.com"
+            };
 
 
-            //var result = await us.UserManager.CreateAsync(user);
-            //if (!result.Succeeded)
-            //{
-            //    return result.Errors.First();
-            //}
+            var result = await us.UserManager.CreateAsync(user);
+            if (!result.Succeeded)
+            {
+              return result.Errors.First();
+           }
             return "User Added";
         }
+
     }
 }

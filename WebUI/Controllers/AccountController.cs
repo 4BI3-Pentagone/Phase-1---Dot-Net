@@ -90,6 +90,7 @@ namespace WebUI.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
+                    ModelState.AddModelError("", "Connected.");
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
