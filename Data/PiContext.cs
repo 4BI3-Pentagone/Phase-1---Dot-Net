@@ -22,9 +22,7 @@ namespace Data
 
         //  public DbSet<Patient> Patients { get; set; }
         //  public DbSet<Doctor> Doctors{ get; set; }
-#pragma warning disable CS0114 // Un membre masque un membre hérité ; le mot clé override est manquant
-        public DbSet<User> Users{ get; set; }
-#pragma warning restore CS0114 // Un membre masque un membre hérité ; le mot clé override est manquant
+   //     public DbSet<User> Users{ get; set; }
 
         public DbSet<Course> Courses { get; set; }
         public DbSet<Chat> Chats { get; set; }

@@ -11,6 +11,7 @@ using Microsoft.Owin.Security;
 using WebUI.Models;
 using ServicePattern;
 using Domain;
+using Service.Identity;
 
 namespace WebUI.Controllers
 {
@@ -146,7 +147,7 @@ namespace WebUI.Controllers
                         {
                             // create new volunteer and map form values to the instance
                             Patient v = new Patient { UserName = model.Email, Email = model.Email };
-                           /* result = await UserManager.CreateAsync(v, model.Password);
+                            result = await UserManager.CreateAsync(v, model.Password);
 
                             // Add volunteer role to the new User
                             if (result.Succeeded)
@@ -157,7 +158,7 @@ namespace WebUI.Controllers
 
                                 return RedirectToAction("Index", "Home");
                             }
-                            AddErrors(result);*/
+                            AddErrors(result);
                         }
                         break;
 
@@ -166,16 +167,16 @@ namespace WebUI.Controllers
                         {
                             // create new Ngo and map form values to the instance
                             Doctor ngo = new Doctor { UserName = model.Email, Email = model.Email };
-                           // result = await UserManager.CreateAsync(ngo, model.Password);
+                            result = await UserManager.CreateAsync(ngo, model.Password);
 
                             // Add Ngo role to the new User
-                           /* if (result.Succeeded)
+                            if (result.Succeeded)
                             {
-                                UserManager.AddToRole(ngo.Id, EAccountType.Ngo.ToString());
+                                UserManager.AddToRole(ngo.Id, EAccountType.Doctor.ToString());
                                 await SignInManager.SignInAsync(ngo, isPersistent: false, rememberBrowser: false);
 
                                 return RedirectToAction("Index", "Home");
-                            }*/
+                            }
                            // AddErrors(result);
                         }
                         break;

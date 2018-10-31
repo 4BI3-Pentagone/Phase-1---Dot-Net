@@ -2,6 +2,7 @@
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
+using static Service.Startup;
 
 [assembly: OwinStartupAttribute(typeof(WebUI.Startup))]
 namespace WebUI
@@ -12,7 +13,7 @@ namespace WebUI
         {
             // ConfigureAuth(app);
 
-            //OwinInit(app);
+            OwinInit(app);
 
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
