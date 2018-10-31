@@ -94,7 +94,7 @@ namespace MyWebEm.Controllers
                            ModelState.AddModelError("", "Tentative de connexion non valide.");
                            */
             var users = su.GetMany();
-            if (conn = true)
+            if (conn == true)
                 return View(users);
             else
                

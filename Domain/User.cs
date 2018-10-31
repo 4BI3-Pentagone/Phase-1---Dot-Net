@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +9,20 @@ namespace Domain
 {
     public enum Gender { male, female }
 
-    public class User
+    public enum EAccountType
     {
-        public int UserId { get; set; }
+        Patient,
+        Doctor,
+        Administrator
+    }
+    public class User:IdentityUser
+    {
+      public int UserId { get; set; }
         public String firstName { get; set; }
         public String lastName { get; set; }
         public DateTime birthDate { get; set; }
         public String adress { get; set; }
-        public String Email { get; set; }
+      //  public String Email { get; set; }
         public String Password { get; set; }
         public Gender gender { get; set; }
     }
