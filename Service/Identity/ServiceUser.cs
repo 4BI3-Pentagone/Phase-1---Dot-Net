@@ -28,7 +28,7 @@ namespace ServicePattern
        
        
       
-        public Boolean verif(String Log , String pswd)
+      /*  public Boolean verif(String Log , String pswd)
         {
             Boolean v = true;
             var req = from p in GetMany()
@@ -38,7 +38,7 @@ namespace ServicePattern
             if (req != null)
                 v = false;
             return v;
-        }
+        }*/
     
    
     }

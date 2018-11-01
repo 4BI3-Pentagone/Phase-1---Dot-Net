@@ -153,7 +153,7 @@ namespace WebUI.Controllers
                             // Add volunteer role to the new User
                             if (result.Succeeded)
                             {
-                                UserManager.AddToRole(v.Id, EAccountType.Patient.ToString());
+                               // UserManager.AddToRole(v.Id, EAccountType.Patient.ToString());
                                 await SignInManager.SignInAsync(v, isPersistent: false, rememberBrowser: false);
                                 // Email confirmation here
 
@@ -173,7 +173,7 @@ namespace WebUI.Controllers
                             // Add Ngo role to the new User
                             if (result.Succeeded)
                             {
-                                UserManager.AddToRole(ngo.Id, EAccountType.Doctor.ToString());
+                           //     UserManager.AddToRole(ngo.Id, EAccountType.Doctor.ToString());
                                 await SignInManager.SignInAsync(ngo, isPersistent: false, rememberBrowser: false);
 
                                 return RedirectToAction("Index", "Home");
