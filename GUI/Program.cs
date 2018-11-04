@@ -14,14 +14,16 @@ namespace GUI
         static void Main(string[] args)
         {
             PiContext ctx = new PiContext();
-            Patient p = new Patient()
-            {
-                PatientId = 12
-
-            };
-            ctx.Patients.Add(p);
-            ctx.SaveChanges();
-
+          /*  User u = new User { Email = "emel.garouachi@esprit.tn",
+             Password= "1234",
+            adress = "1 rue de sfax",
+            UserName="emel",
+            gender=Gender.
+            female,
+            lastName="Garouachi",
+            birthDate=DateTime.Now};*/
+        //    ctx.Users.Add(u);
+         //   ctx.SaveChanges();
         }
     }
 }
