@@ -9,7 +9,7 @@ namespace Domain
     public class Course
     {
         public int CourseId { get; set; }
-        public ICollection<Step> steps { get; set; }
+        public virtual ICollection<Step> steps { get; set; }
        
 
 
