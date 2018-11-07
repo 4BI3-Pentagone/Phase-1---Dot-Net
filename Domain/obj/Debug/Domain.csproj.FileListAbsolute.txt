@@ -84,6 +84,7 @@ C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\Domain\bin\Debug\fr\Mi
 C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\Domain\obj\Debug\Domain.dll
 C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\Domain\obj\Debug\Domain.pdb
+<<<<<<< HEAD
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\bin\Debug\Domain.dll.config
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\bin\Debug\Domain.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\bin\Debug\Domain.pdb
@@ -121,3 +122,6 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\bin\Debug\fr\Microsoft.
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\obj\Debug\Domain.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\obj\Debug\Domain.pdb
+=======
+C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+>>>>>>> f468c2ba9b3149a269ac66ee60179374809c1bf4

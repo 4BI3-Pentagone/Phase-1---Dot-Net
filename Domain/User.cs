@@ -19,14 +19,14 @@ namespace Domain
     }
     public class User:IdentityUser
     {
-   //   public int? UserId { get; set; }
-           public String FirstName { get; set; }
-    //    public String lastName { get; set; }
-   //     [DataType(DataType.Date)]
-    //    public DateTime? birthDate { get; set; }
-      //  public String adress { get; set; }
-      //  public String Email { get; set; }
-      //  public String Password { get; set; }
-     //   public Gender? gender { get; set; }
+        public String FirstName { get; set; }
+        public String lastName { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime? birthDate { get; set; }
+        public String adress { get; set; }
+        //  public String Email { get; set; }
+        //  public String Password { get; set; }
+        //   public Gender? gender { get; set; }
+        public String ImageName { get; set; }
     }
 }

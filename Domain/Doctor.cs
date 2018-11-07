@@ -11,5 +11,9 @@ namespace Domain
     {
 
         public Speciality speciality { get; set; }
+
+     //   public virtual ICollection<Course> Courses { get; set; }
+        public virtual ICollection<Chat> Conversations { get; set; }
+        public virtual ICollection<Appointment> Appointments { get; set; }
     }
 }

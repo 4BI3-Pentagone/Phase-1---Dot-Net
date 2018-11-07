@@ -8,6 +8,7 @@ using MySql.Data;
 using System.Data.Entity;
 using System.Text;
 using System.Threading.Tasks;
+using Data.Configurations;
 
 namespace Data
 {
@@ -39,20 +40,22 @@ namespace Data
             return new PiContext();
         }
 
-
+     /*   protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new CourseConfig());
+        }*/
 
     }
     public class ContexInit : DropCreateDatabaseIfModelChanges<PiContext>
     {
         protected override void Seed(PiContext context)
         {
-         /*   List<Patient> patients = new List<Patient>() {
-                new Patient {PatientId=1
-                            }
-               
-            };
-            context.Patients.AddRange(patients);
-            context.SaveChanges();*/
+            Patient p = new Patient();
+            p.Email = "ah@gmail.com";
+            p.PasswordHash = "123456789";
+            p.UserName = "ah";
+            context.Users.Add(p);
+            context.SaveChanges();
         }
     }
 }
