@@ -10,7 +10,7 @@ namespace Domain
     {
         public int CourseId { get; set; }
         public ICollection<Appointment> Visits { get; set; }
-     //   public virtual Patient patient { get; set; }
+        public virtual Patient Patient { get; set; }
 
 
     }

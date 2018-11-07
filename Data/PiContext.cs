@@ -8,6 +8,7 @@ using MySql.Data;
 using System.Data.Entity;
 using System.Text;
 using System.Threading.Tasks;
+using Data.Configurations;
 
 namespace Data
 {
@@ -22,7 +23,7 @@ namespace Data
 
         //  public DbSet<Patient> Patients { get; set; }
         //  public DbSet<Doctor> Doctors{ get; set; }
-   //     public DbSet<User> Users{ get; set; }
+  //    public DbSet<User> Users{ get; set; }
 
         public DbSet<Course> Courses { get; set; }
         public DbSet<Chat> Chats { get; set; }
@@ -30,6 +31,7 @@ namespace Data
         public DbSet<Debreif> Debreifs { get; set; }
         public DbSet<Repport> Repports { get; set; }
         public DbSet<Rate> Rates { get; set; }
+        public DbSet<Test> Tests { get; set; }
 
 
 
@@ -39,20 +41,23 @@ namespace Data
             return new PiContext();
         }
 
-
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+          modelBuilder.Configurations.Add(new CourseConfig());
+        }
 
     }
+   
     public class ContexInit : DropCreateDatabaseIfModelChanges<PiContext>
     {
         protected override void Seed(PiContext context)
         {
-         /*   List<Patient> patients = new List<Patient>() {
-                new Patient {PatientId=1
-                            }
-               
-            };
-            context.Patients.AddRange(patients);
-            context.SaveChanges();*/
+
+            Test t = new Test { TestId = 2, nom = "test" };
+            context.Tests.Add(t);
+            context.SaveChanges();
+
+
         }
     }
 }
