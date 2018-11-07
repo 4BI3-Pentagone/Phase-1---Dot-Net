@@ -11,27 +11,23 @@ namespace WebUI.Controllers
     public class HomeController : Controller
     {
 
-        public async System.Threading.Tasks.Task<string> AddUser()
-        {
-            //  AppService s = new AppService();
-          //  s.TestContext();
-
-
-            ServiceUser us = new ServiceUser();
-            var user = new User
+            public ActionResult Index()
             {
-                UserName = "TestUser",
-                Email = "TestUser@test.com"
-            };
+                return View();
+            }
 
-
-            var result = await us.UserManager.CreateAsync(user);
-            if (!result.Succeeded)
+            public ActionResult About()
             {
-              return result.Errors.First();
-           }
-            return "User Added";
+                ViewBag.Message = "Your application description page.";
+
+                return View();
+            }
+
+            public ActionResult Contact()
+            {
+                ViewBag.Message = "Your contact page.";
+
+                return View();
+            }
         }
-
     }
-}
