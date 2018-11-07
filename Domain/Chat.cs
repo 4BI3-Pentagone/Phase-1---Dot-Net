@@ -8,7 +8,7 @@ namespace Domain
 {
     public class Chat
     {
-       
+        //abdjlil
         public int ChatId { get; set; }
         public virtual Patient patient { get; set; }
         public virtual Doctor doctor { get; set; }

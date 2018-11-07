@@ -10,8 +10,5 @@ namespace Domain
     {
         public int Insuranceid { get; set; }
         public virtual Course course { get; set; }
-        public virtual ICollection<Appointment> Appointments { get; set; }
-        public virtual ICollection<Chat> Conversations { get; set; }
-
     }
 }

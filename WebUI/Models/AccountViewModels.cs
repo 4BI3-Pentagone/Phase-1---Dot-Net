@@ -28,6 +28,9 @@ namespace WebUI.Models
             [Required]
             [Display(Name = "Account Type")]
             public EAccountType AccountType { get; set; }
+
+           
+            public string FirstName { get; set; }
         }
 
         public class LoginViewModel

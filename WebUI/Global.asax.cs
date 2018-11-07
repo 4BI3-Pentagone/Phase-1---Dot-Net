@@ -15,9 +15,6 @@ namespace WebUI
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
-
         }
     }
 }

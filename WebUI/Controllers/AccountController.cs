@@ -147,7 +147,7 @@ namespace WebUI.Controllers
                     case Domain.EAccountType.Patient:
                         {
                             // create new volunteer and map form values to the instance
-                            Patient v = new Patient { UserName = model.Email, Email = model.Email };
+                            Patient v = new Patient { UserName = model.Email, Email = model.Email , FirstName = model.FirstName };
                             result = await UserManager.CreateAsync(v, model.Password);
 
                             // Add volunteer role to the new User
@@ -167,7 +167,7 @@ namespace WebUI.Controllers
                     case EAccountType.Doctor:
                         {
                             // create new Ngo and map form values to the instance
-                            Doctor ngo = new Doctor { UserName = model.Email, Email = model.Email };
+                            Doctor ngo = new Doctor { UserName = model.Email, Email = model.Email ,FirstName=model.FirstName};
                             result = await UserManager.CreateAsync(ngo, model.Password);
 
                             // Add Ngo role to the new User
