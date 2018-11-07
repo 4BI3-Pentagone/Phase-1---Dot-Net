@@ -1,0 +1,83 @@
+﻿ 
+.active {
+    color: black !important;
+}
+/*.active {
+            color: #dc3545 !important;
+            border-bottom: 2px solid #dc3545;
+        }
+
+        .selected {
+            color: #28a745 !important;
+            border-bottom: 2px solid #28a745;
+        }*/
+.active {
+    color: white !important;
+    border-bottom: 2px solid white;
+}
+
+/* .selected {
+            color: gainsboro !important;
+            border-bottom: 2px solid gainsboro;
+        }*/
+
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+
+
+    .dropdown-submenu:hover > a:after {
+        border-left-color: black;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+        .dropdown-submenu.pull-left > .dropdown-menu {
+            left: -100%;
+            margin-left: 10px;
+            -webkit-border-radius: 6px 0 6px 6px;
+            -moz-border-radius: 6px 0 6px 6px;
+            border-radius: 6px 0 6px 6px;
+        }
+
+.badge {
+    color: #fff !important;
+    background-color: #dc3545;
+}
+
+.badge-green {
+    color: #fff !important;
+    background-color: darkcyan;
+}
+
+.badge-blue {
+    color: #fff !important;
+    background-color: blue;
+}
+
+.navbarbot {
+    min-height: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+

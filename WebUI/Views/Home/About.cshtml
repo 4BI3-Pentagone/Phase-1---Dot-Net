@@ -1,7 +1,41 @@
-﻿@{
-    ViewBag.Title = "About";
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Accueil";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<section id="about" class="section-bg">
+    <div class="container-fluid">
+        <div class="section-header ">
+            <h3 class="section-title" style="padding-left:700px;padding-top:30px ; font-size:30px ; color :#2ECCFA ; font-weight:bold">About Us</h3>
+            <span class="section-divider"></span>
+            <p class="section-description" style="padding-left:620px ; font-size:24px ; color:#81F7D8">
+                A medical appointments portal
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 about-img" data-aos="fade-right" style="">
+                <img src="~/Content/Images/doctor.jpg" alt="">
+            </div>
+
+            <div class="col-lg-6 content" data-aos="fade-right">
+                <h2>     Epione is an intelligent portal for making medical appointments  which offers to its users the ability to readjust their appointments</h2>
+                @*<h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>*@
+
+
+                <ul>
+                    <li><i class="ion-android-checkmark-circle" style="font-size:18px; ">The solution consists in a mobile and a web application</i></li>
+                    <li><i class="ion-android-checkmark-circle" style="font-size:18px">  The patient chooses his location and the doctor specialty.</i> </li>
+                    <li><i class="ion-android-checkmark-circle" style="font-size:18px">He enters his information and chooses a date from the doctor’s calendar.</i> </li>
+                    <li><i class="ion-android-checkmark-circle" style="font-size:18px">The doctor visualizes all his appointments in his space.</i></li>
+                    <li><i class="ion-android-checkmark-circle" style="font-size:18px"> In case of cancellation of an appointment, the system oﬀers an alternative appointment</i></li>
+                    <li><i class="ion-android-checkmark-circle" style="font-size:18px"> The application also manages and saves the patient course which helps the doctor to suggest a better treatment for their patients</i></li>
+                    <li><i class="ion-android-checkmark-circle" style="font-size:18px"> Also, the patient is able to ask directly the doctor through the chat option.</i></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+</section><!-- #about -->

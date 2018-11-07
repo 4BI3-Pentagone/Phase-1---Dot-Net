@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Accueil";
+}
+
+
+        <!------ Include the above in your HEAD tag ---------->
+     <style>
+               body{ 
+                background: url(../../Content/Images/accp.jpg) no-repeat center center fixed;
+               }
+
+
+
+
+     </style> 
+        <link href="~/Content/ButtonAcceuil.css" rel="stylesheet" />
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12" style="padding-top:300px" >
+                                            <a href="@Url.Action("", "")" class="btn btn-dblue1 btn-lg" role="button">
+                                                <span class="fa fa-calculator glyphsize" style="margin-bottom: 5px; align-content: center;text-align: center"></span> <br />
+                                                <font size="3" face="century gothic" color="white" text-align="center">  <br />  </font>
+                                            </a>
+                                            <a href="@Url.Action("", "")" class="btn btn-dblue2 btn-lg" role="button">
+                                                <span class="glyphicon glyphicon-shopping-cart glyphsize"></span> <br />
+                                                <font size="3" face="century gothic" color="white" text-align="center">  Visaulize <br />Course </font>
+                                            </a>
+                                            <a href="@Url.Action("", "", new {msg = ""})" class="btn btn-dblue3 btn-lg" role="button">
+                                                <span class="fa fa-medkit glyphsize" style="margin-bottom: 5px"></span> <br />
+                                                <font size="3" face="century gothic" color="white" text-align="center"> Take <br /> Appointements </font>
+
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @*Sinistres color RED*@
+        
+
+    <script src="~/Scripts/jquery-3.0.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#span_home").addClass("active");
+
+
+        });
+    </script>
+
+}

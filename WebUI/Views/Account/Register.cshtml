@@ -1,22 +1,49 @@
 ﻿@using Domain
 @using WebUI.Controllers
 @model WebUI.Models.AccountViewModels.RegisterViewModel
-@{
-    ViewBag.Title = "Register";
-}
-<h2>ViewBag.Title</h2>
+
+@*@{
+        ViewBag.Title = "Register";
+    }
+        <h2>ViewBag.Title</h2>*@
+
+<style>
+            body {
+                background: url(../../Content/Images/backlogin.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            h3 {padding-left:650px ; 
+                padding-top: 20px ; font-weight :bold; 
+                color: #29b7e1
+            }
+            .form-control{
+                background-color:cornsilk
+            }
+            .btn-default {width:600px ;  background-color:lightblue ;color :blue; font-weight:bold
+
+            }
+            .col-md-offset-2 {padding-left: 200px ; 
+                             
+            }
+            
+           
+    </style>
+
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
 
     @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
+    <h3>Create a new account</h3>
     <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })
 
     <!--Email-->
-    <div class="form-group">
+    <div class="form-group" >
         @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
+        <div class="col-md-10" st>
             @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
         </div>
     </div>
@@ -47,8 +74,8 @@
     <!--Account Type-->
     <div class="form-group">
         @Html.LabelFor(m => m.AccountType, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.Label("Patient: ", new { @class = "control-label" }) @Html.RadioButtonFor(m => m.AccountType, EAccountType.Patient, new { @checked = "checked" })
+        <div class="col-md-10" style="padding-left:400px ">
+            @Html.Label("Patient: ", new { @class = "control-label"  }) @Html.RadioButtonFor(m => m.AccountType, EAccountType.Patient, new { @checked = "checked" })
             @Html.Label("Docotr: ", new { @class = "control-label" }) @Html.RadioButtonFor(m => m.AccountType, EAccountType.Doctor)
         </div>
     </div>

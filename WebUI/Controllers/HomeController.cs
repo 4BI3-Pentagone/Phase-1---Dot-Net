@@ -13,8 +13,16 @@ namespace WebUI.Controllers
 
             public ActionResult Index()
             {
+            try
+            {
+
                 return View();
             }
+            catch (Exception e)
+            {
+                return RedirectToAction("Error500", "Home", new { msg = e.InnerException.Message });
+            }
+        }
 
             public ActionResult About()
             {
