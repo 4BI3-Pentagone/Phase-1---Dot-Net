@@ -20,14 +20,14 @@ namespace Data.Configurations
 
 
 
-            HasMany(d => d.Visits).WithMany(mp => mp.Courses).Map(m =>
+         /*   HasMany(d => d.Visits).WithMany(mp => mp.Courses).Map(m =>
             {
                 m.ToTable("Courses_Appointments");
                 m.MapLeftKey("CourseId");
                 m.MapRightKey("AppoitmentId");
             });
 
-
+    */
 
 
 
