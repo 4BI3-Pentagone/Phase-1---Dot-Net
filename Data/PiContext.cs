@@ -31,7 +31,7 @@ namespace Data
         public DbSet<Debreif> Debreifs { get; set; }
         public DbSet<Repport> Repports { get; set; }
         public DbSet<Rate> Rates { get; set; }
-
+     public DbSet<Step> Steps { get; set; }
 
 
 
@@ -40,7 +40,7 @@ namespace Data
             return new PiContext();
         }
 
-     /*   protected override void OnModelCreating(DbModelBuilder modelBuilder)
+     /*  protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new CourseConfig());
         }*/

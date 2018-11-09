@@ -76,7 +76,7 @@ namespace WebUI.Controllers
         // POST: /Account/Login
         [HttpPost]
         [AllowAnonymous]
-        [ValidateAntiForgeryToken]
+       // [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(AccountViewModels.LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)
@@ -86,7 +86,7 @@ namespace WebUI.Controllers
 
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe,shouldLockout: false);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -148,6 +148,8 @@ namespace WebUI.Controllers
                         {
                             // create new volunteer and map form values to the instance
                             Patient v = new Patient { UserName = model.Email, Email = model.Email , FirstName = model.FirstName };
+                            v.EmailConfirmed = true;
+                            v.SecurityStamp = null;
                             result = await UserManager.CreateAsync(v, model.Password);
 
                             // Add volunteer role to the new User
@@ -169,7 +171,8 @@ namespace WebUI.Controllers
                             // create new Ngo and map form values to the instance
                             Doctor ngo = new Doctor { UserName = model.Email, Email = model.Email ,FirstName=model.FirstName};
                             result = await UserManager.CreateAsync(ngo, model.Password);
-
+                            ngo.EmailConfirmed = true;
+                            ngo.SecurityStamp = null;
                             // Add Ngo role to the new User
                             if (result.Succeeded)
                             {

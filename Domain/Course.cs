@@ -9,8 +9,8 @@ namespace Domain
     public class Course
     {
         public int CourseId { get; set; }
-        public ICollection<Appointment> Visits { get; set; }
-     //   public virtual Patient patient { get; set; }
+        public virtual ICollection<Step> steps { get; set; }
+       
 
 
     }

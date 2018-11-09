@@ -114,7 +114,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rate.cs" />
     <Compile Include="Repport.cs" />
+<<<<<<< HEAD
     <Compile Include="Speciality.cs" />
+=======
+    <Compile Include="Step.cs" />
+>>>>>>> 72b6e2aea60f300c83ffdceec74e4b877d521669
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
