@@ -218,6 +218,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\DashboardAdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PatientController.cs" />
     <Compile Include="Global.asax.cs">
@@ -605,10 +606,18 @@
     <Content Include="Views\Patient\AccueilPatient.cshtml" />
     <Content Include="Views\Course\All.cshtml" />
     <Content Include="Views\Course\Create.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\DashboardAdmin\Index.cshtml" />
+    <Content Include="Views\DashboardAdmin\AdminStat.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\DataTables\" />
+    <Folder Include="Content\TemplateAdmin\bower_components\" />
+    <Folder Include="Content\TemplateAdmin\build\" />
+    <Folder Include="Content\TemplateAdmin\dist\" />
+    <Folder Include="Content\TemplateAdmin\documentation\" />
+    <Folder Include="Content\TemplateAdmin\plugins\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
