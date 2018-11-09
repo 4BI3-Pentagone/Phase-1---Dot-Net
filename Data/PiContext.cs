@@ -28,6 +28,7 @@ namespace Data
         public DbSet<Course> Courses { get; set; }
         public DbSet<Chat> Chats { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Debreif> Debreifs { get; set; }
         public DbSet<Repport> Repports { get; set; }
         public DbSet<Rate> Rates { get; set; }
