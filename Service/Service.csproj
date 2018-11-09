@@ -101,6 +101,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppService.cs" />
+    <Compile Include="docteur\DocteurService.cs" />
+    <Compile Include="docteur\IServiceDocteur.cs" />
+    <Compile Include="docteur\IServiceSpeciality.cs" />
+    <Compile Include="docteur\SpecialityService.cs" />
     <Compile Include="Identity\ApplicationSignInManager.cs" />
     <Compile Include="Identity\ApplicationUserManager.cs" />
     <Compile Include="Identity\IServiceUser.cs" />

@@ -113,6 +113,26 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\201811071134291_speccc.cs" />
+    <Compile Include="Migrations\201811071134291_speccc.Designer.cs">
+      <DependentUpon>201811071134291_speccc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811080849452_kk.cs" />
+    <Compile Include="Migrations\201811080849452_kk.Designer.cs">
+      <DependentUpon>201811080849452_kk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811080853073_dc.cs" />
+    <Compile Include="Migrations\201811080853073_dc.Designer.cs">
+      <DependentUpon>201811080853073_dc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811080900148_mod.cs" />
+    <Compile Include="Migrations\201811080900148_mod.Designer.cs">
+      <DependentUpon>201811080900148_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811081001530_hr.cs" />
+    <Compile Include="Migrations\201811081001530_hr.Designer.cs">
+      <DependentUpon>201811081001530_hr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PiContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -127,7 +147,23 @@
       <Name>Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201811071134291_speccc.resx">
+      <DependentUpon>201811071134291_speccc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811080849452_kk.resx">
+      <DependentUpon>201811080849452_kk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811080853073_dc.resx">
+      <DependentUpon>201811080853073_dc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811080900148_mod.resx">
+      <DependentUpon>201811080900148_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811081001530_hr.resx">
+      <DependentUpon>201811081001530_hr.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
