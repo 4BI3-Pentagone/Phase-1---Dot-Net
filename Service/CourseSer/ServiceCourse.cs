@@ -1,4 +1,7 @@
-﻿using Data.Infrastructure;
+﻿using Data;
+using Data.Infrastructure;
+using Domain;
+using Service.PatientService;
 using ServicePattern;
 using System;
 using System.Collections.Generic;
@@ -15,12 +18,15 @@ namespace Service.CourseSer
 
         static DatabaseFactory DBF = new DatabaseFactory();
         static IUnitOfWork UOW = new UnitOfWork(DBF);
+       
         public ServiceCourse() : base(UOW)
         {
            
+
         }
        
 
-    
+      
+
     }
 }
