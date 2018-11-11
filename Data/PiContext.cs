@@ -56,7 +56,22 @@ namespace Data
             p.PasswordHash = "123456789";
             p.UserName = "ah";
             context.Users.Add(p);
+           // context.SaveChanges();
+       
+        List<  Appointment>appointments = new List<Appointment>() {
+                new Appointment {state =State.Done},
+                new Appointment {state =State.Done},
+                new Appointment {state =State.Done},
+                  new Appointment {state =State.Done},
+                    new Appointment {state =State.Done},
+                      new Appointment {state =State.Done},
+                      new Appointment {state =State.Done},
+                        new Appointment {state =State.Done}
+
+            };
+            context.Appointments.AddRange(appointments);
             context.SaveChanges();
         }
+
     }
 }

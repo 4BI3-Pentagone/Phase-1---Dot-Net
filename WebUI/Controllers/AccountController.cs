@@ -188,9 +188,10 @@ namespace WebUI.Controllers
                         {
                             // create new Ngo and map form values to the instance
                             Doctor ngo = new Doctor { UserName = model.Email, Email = model.Email ,FirstName=model.FirstName};
-                            result = await UserManager.CreateAsync(ngo, model.Password);
                             ngo.EmailConfirmed = true;
                             ngo.SecurityStamp = null;
+                            result = await UserManager.CreateAsync(ngo, model.Password);
+                           
                             // Add Ngo role to the new User
                             if (result.Succeeded)
                             {
@@ -199,7 +200,7 @@ namespace WebUI.Controllers
 
                                 return RedirectToAction("Index", "Home");
                             }
-                           // AddErrors(result);
+                           AddErrors(result);
                         }
                         break;
                 }

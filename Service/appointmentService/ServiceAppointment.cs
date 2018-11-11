@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Service.appointmentService
 {
-    public class ServiceAppointment : Service<Domain.Appointment>, IServiceAppointment
+    public class ServiceAppointment : Service<Appointment>, IServiceAppointment
 
     {
 

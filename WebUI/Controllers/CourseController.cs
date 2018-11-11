@@ -1,21 +1,27 @@
-﻿using Service.CourseSer;
+﻿using Domain;
+using Service.CourseSer;
 using Service.PatientService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNet.Identity;
 using System.Web;
 using System.Web.Mvc;
+using Service.appointmentService;
 
 namespace WebUI.Controllers
 {
     public class CourseController : Controller
     {
         ServicePatient  SP= new ServicePatient();
+        ServiceCourse SC = new ServiceCourse();
+        ServiceAppointment SA = new ServiceAppointment();
         // GET: Course
         public ActionResult Index()
         {
            
-            return View(SP.GetMany());
+           
+           return View(SA.GetAllS());
         }
 
         // GET: Course/Details/5
