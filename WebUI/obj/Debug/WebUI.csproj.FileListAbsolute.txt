@@ -364,7 +364,6 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\fr\Microsoft.Owin.Se
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.pdb
-<<<<<<< HEAD
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\ApplicationInsights.config
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\roslyn\csc.exe
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -487,7 +486,6 @@ C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.dll
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.pdb
-=======
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\WebUI\bin\ApplicationInsights.config
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\WebUI\bin\roslyn\csc.exe
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -610,4 +608,3 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\WebUI\bin\fr\Microsoft.Owin.Security.
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.pdb
->>>>>>> 4dbcaad8620ffa49950deb018ee666fc17e43925

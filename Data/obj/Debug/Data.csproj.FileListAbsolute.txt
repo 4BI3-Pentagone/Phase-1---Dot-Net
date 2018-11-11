@@ -130,7 +130,6 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\bin\Debug\fr\Microsoft.As
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\obj\Debug\Data.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\obj\Debug\Data.pdb
-<<<<<<< HEAD
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Data.dll.config
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Data.dll
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Data.pdb
@@ -170,7 +169,6 @@ C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\D
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\obj\Debug\Data.dll
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\obj\Debug\Data.pdb
-=======
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Data.dll.config
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Data.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Data.pdb
@@ -212,9 +210,5 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\obj\Debug\Data.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\obj\Debug\Data.pdb
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\obj\Debug\Data.Migrations.a.resources
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\obj\Debug\Data.csproj.GenerateResource.Cache
-<<<<<<< HEAD
 C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\obj\Debug\Data.Migrations.a.resources
 C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\obj\Debug\Data.csproj.GenerateResource.Cache
-=======
->>>>>>> 4dbcaad8620ffa49950deb018ee666fc17e43925
->>>>>>> 61b46fdc987dd8e68f6ebcf7ea39a8ae6a1ba43f
