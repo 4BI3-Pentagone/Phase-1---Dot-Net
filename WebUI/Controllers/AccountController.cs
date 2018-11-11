@@ -150,7 +150,7 @@ namespace WebUI.Controllers
                     case Domain.EAccountType.Patient:
                         {
 
-                           
+                         //   String s=User.Identity.GetUserName();
 
                             // create new volunteer and map form values to the instance
                             Patient v = new Patient { UserName = model.Email, Email = model.Email , FirstName = model.FirstName };

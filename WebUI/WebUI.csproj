@@ -606,14 +606,11 @@
     <Content Include="Views\Patient\AccueilPatient.cshtml" />
     <Content Include="Views\Course\All.cshtml" />
     <Content Include="Views\Course\Create.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Course\Index.cshtml" />
     <Content Include="Views\Course\CreateSteps.cshtml" />
-=======
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\DashboardDoctor\Index.cshtml" />
     <Content Include="Views\DashboardDoctor\StatDoctor.cshtml" />
->>>>>>> 61b46fdc987dd8e68f6ebcf7ea39a8ae6a1ba43f
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
