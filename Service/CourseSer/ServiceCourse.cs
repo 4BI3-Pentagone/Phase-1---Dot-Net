@@ -29,7 +29,22 @@ namespace Service.CourseSer
 
 
         // public 
+        public IEnumerable<Appointment> GetMyCourse(String d)
+        {
 
+            //var facture = UOW.getRepository<Facture>().GetMany(F => F.Client == c);
+            /* var req = from f in facture
+                       select f.produit;
+             return req;*/
+
+            var ls = UOW.getRepository<Appointment>().GetMany(P => P.patient.Id == d);
+            
+            var req = from l in ls
+                      where l.state== 0
+                      select l 
+                      ;
+           return req;
+        }
 
         public  IEnumerable<Patient> GetMyPatients(Doctor d)
         {

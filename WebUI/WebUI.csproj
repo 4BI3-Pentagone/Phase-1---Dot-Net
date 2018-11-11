@@ -217,6 +217,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\appnController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\DashboardDoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -606,12 +607,20 @@
     <Content Include="Views\Patient\AccueilPatient.cshtml" />
     <Content Include="Views\Course\All.cshtml" />
     <Content Include="Views\Course\Create.cshtml" />
-    <Content Include="Views\Course\Index.cshtml" />
     <Content Include="Views\Course\CreateSteps.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\DashboardDoctor\Index.cshtml" />
     <Content Include="Views\DashboardDoctor\StatDoctor.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\DashboardDoctor\StatDoctor2.cshtml" />
+=======
+    <Content Include="Views\Course\MonParc.cshtml" />
+    <Content Include="Views\appn\Create.cshtml" />
+    <Content Include="Views\appn\Delete.cshtml" />
+    <Content Include="Views\appn\Details.cshtml" />
+    <Content Include="Views\appn\Edit.cshtml" />
+    <Content Include="Views\appn\Index.cshtml" />
+>>>>>>> 2cc4c008b2557e08a7dd88f308ce23634ad7a4c9
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
