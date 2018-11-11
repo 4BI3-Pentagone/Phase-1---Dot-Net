@@ -50,7 +50,25 @@ namespace Service.appointmentService
                 this.Commit();
             }
 
-        }
+
+       /* public Dictionary<string, int> StatDoctor(int id)
+        {
+            {
+
+                var ss = from Appointment a in GetAllS()
+                         group a by a.Date into g
+                         select new { g.Key, Count = g.Count() };
+                Dictionary<string, int> depart = new Dictionary<string, int>();
+                foreach (var t in ss)
+                {
+                    depart.Add(t.Key.ToString(), t.Count);
+                    Console.WriteLine(t.Key + "" + t.Count);
+                }
+                return depart;
+            }
+        }*/
+
+    }
 
 
     
