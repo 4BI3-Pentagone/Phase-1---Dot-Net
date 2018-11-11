@@ -100,14 +100,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="appointmentService\IServiceAppointment.cs" />
+    <Compile Include="appointmentService\ServiceAppointment.cs" />
     <Compile Include="AppService.cs" />
     <Compile Include="CourseSer\IServiceCourse.cs" />
     <Compile Include="CourseSer\ServiceCourse.cs" />
+    <Compile Include="DoctorServices\IServicesDoctor.cs" />
+    <Compile Include="DoctorServices\ServicesDoctor.cs" />
     <Compile Include="Identity\ApplicationSignInManager.cs" />
     <Compile Include="Identity\ApplicationUserManager.cs" />
     <Compile Include="Identity\IServiceUser.cs" />
+    <Compile Include="IserviceDoctor.cs" />
+    <Compile Include="IServicesDoctor.cs" />
+    <Compile Include="PatientService\IServicePatient.cs" />
+    <Compile Include="PatientService\ServicePatient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Identity\ServiceUser.cs" />
+    <Compile Include="ServiceDoctor.cs" />
+    <Compile Include="ServicesDoctor.cs" />
     <Compile Include="Startup.Service.cs" />
   </ItemGroup>
   <ItemGroup>

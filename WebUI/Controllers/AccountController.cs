@@ -12,7 +12,9 @@ using WebUI.Models;
 using ServicePattern;
 using Domain;
 using Service.Identity;
-
+using Service.CourseSer;
+using Data;
+//a
 namespace WebUI.Controllers
 {
     [Authorize]
@@ -25,10 +27,11 @@ namespace WebUI.Controllers
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
         private readonly ServiceUser _userService = new ServiceUser();
-
-
+        PiContext ctx = new PiContext();
+        ServiceCourse SC = new ServiceCourse();
         public ApplicationSignInManager SignInManager
         {
+            
             get
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
@@ -146,19 +149,34 @@ namespace WebUI.Controllers
                     // Volunteer Account type selected:
                     case Domain.EAccountType.Patient:
                         {
+
+                           
+
                             // create new volunteer and map form values to the instance
                             Patient v = new Patient { UserName = model.Email, Email = model.Email , FirstName = model.FirstName };
                             v.EmailConfirmed = true;
                             v.SecurityStamp = null;
+                            Course c = new Course();                       
+                            v.course = c;
+                            SC.Add(c);
+                            SC.Commit();
                             result = await UserManager.CreateAsync(v, model.Password);
+                          
+                            //  c.steps
+                            //  SC.Add(c);
+                            //     ctx.Courses.Add(c);
+                            //      ctx.SaveChanges();
+                         
+                            // ctx.Users.Add(u);
 
-                            // Add volunteer role to the new User
+                         //   ctx.SaveChanges();
+
                             if (result.Succeeded)
                             {
-                               // UserManager.AddToRole(v.Id, EAccountType.Patient.ToString());
+                                
+                            
                                 await SignInManager.SignInAsync(v, isPersistent: false, rememberBrowser: false);
-                                // Email confirmation here
-
+                                 
                                 return RedirectToAction("Index", "Home");
                             }
                             AddErrors(result);

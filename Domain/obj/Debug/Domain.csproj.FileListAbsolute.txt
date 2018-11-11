@@ -121,7 +121,6 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\bin\Debug\fr\Microsoft.
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\obj\Debug\Domain.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Domain\obj\Debug\Domain.pdb
-C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Domain.dll.config
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Domain.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Domain.pdb

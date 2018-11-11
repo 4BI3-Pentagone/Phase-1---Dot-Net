@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Service.CourseSer;
+using Service.PatientService;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,12 @@ namespace WebUI.Controllers
 {
     public class CourseController : Controller
     {
+        ServicePatient  SP= new ServicePatient();
         // GET: Course
         public ActionResult Index()
         {
-            return View();
+           
+            return View(SP.GetMany());
         }
 
         // GET: Course/Details/5
