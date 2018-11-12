@@ -76,7 +76,7 @@ namespace WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult CreateStep(string id,[Bind(Include = "StepId,treatment,state")] Step step)
         {
-          //  int n = SC.CourseNotDone(id);
+            int n = SC.CourseNotDone(id);
             if (ModelState.IsValid)
             {
                 Patient p = (Patient)db.Users.Find(id);
@@ -93,7 +93,7 @@ namespace WebUI.Controllers
                 return RedirectToAction("Index");
             }
 
-            return View(step );
+            return View(step);
         }
         // GET: Pat/Edit/5
         public ActionResult Edit(string id)

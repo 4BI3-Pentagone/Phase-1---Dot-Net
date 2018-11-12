@@ -1,17 +1,16 @@
 ﻿@model Domain.Step
 
-
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "CreateStep";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Create</h2>
+<h2>CreateStep</h2>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-
+    
     <div class="form-horizontal">
         <h4>Step</h4>
         <hr />
