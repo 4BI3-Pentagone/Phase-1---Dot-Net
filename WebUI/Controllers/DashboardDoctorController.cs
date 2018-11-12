@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace WebUI.Controllers
 {
-    public class DashboardAdminController : Controller
+    public class DashboardDoctorController : Controller
     {
         // GET: DashboardAdmin
         public ActionResult Index()
@@ -14,7 +14,7 @@ namespace WebUI.Controllers
             return View();
         }
 
-        public ActionResult AdminStat()
+        public ActionResult DoctorStat()
         {
             return View();
         }

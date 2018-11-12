@@ -92,68 +92,76 @@
             <div class="row" id="pwd-container">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
-                    <section class="login-form">
-                        <form method="post" action="#" role="login">
-                            <img src="~/Content/Images/EpAuth.png" class="img-responsive" alt="" />
-                            @*<h4  style="padding-left:150px ;padding-top :-200px; color:brown ; font-weight:bold"  >A medical appoitements    </h4>*@
-                            @* @Html.Editor("email", new { htmlAttributes = new { @class = "form -control input-lgform-control", @required = "true", @placeholder = "Email Address" } })*@
-                       
-                        
-                              <!-- Begin Form-->
-                                        @*@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-        {
-            @Html.AntiForgeryToken()
-            <h4>Use a local account to log in.</h4>
-                <hr />
-                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })*@
+                    <section id="loginForm">
+                        <!-- Begin Form-->
+                        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            <section class="login-form">
+                           @*  <form method="post" action="#" role="login"> *@ 
+                                    <img src="~/Content/Images/EpAuth.png" class="img-responsive" alt="" />
+                                    @*<h4  style="padding-left:150px ;padding-top :-200px; color:brown ; font-weight:bold"  >A medical appoitements    </h4>*@
+                                    @* @Html.Editor("email", new { htmlAttributes = new { @class = "form -control input-lgform-control", @required = "true", @placeholder = "Email Address" } })*@
 
-                                        <!-- username Field-->
 
-                        <div class="form-group">
-                            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" }) 
-                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
+                                    <!-- Begin Form-->
+                                    @*@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <h4>Use a local account to log in.</h4>
+                                <hr />
+                                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })*@
 
-                        <!-- Password Field-->
-                        <div class="form-group">
-                            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-                            <div class="col-md-10">
-                                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-                            </div>
-                        </div>
+                                    <!-- username Field-->
 
-                        <!-- Remember me Field-->
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <div class="checkbox" style="color :blue">
-                                    @Html.CheckBoxFor(m => m.RememberMe)
-                                    @Html.LabelFor(m => m.RememberMe)
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                                        <div class="col-md-10">
+                                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- Password Field-->
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                                        <div class="col-md-10">
+                                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <!-- Remember me Field-->
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <div class="checkbox" style="color :blue">
+                                                @Html.CheckBoxFor(m => m.RememberMe)
+                                                @Html.LabelFor(m => m.RememberMe)
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Submit Button-->
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Log in" class="btn btn-default" style="background-color:lightblue ;width : 350px ;color :blue ; font-weight:bold" />
+                                        </div>
+                                    </div>
+                                    <p style="padding-left:200px">
+                                        @Html.ActionLink("Register as a new user", "Register")
+                                    </p>
+                                    @* Enable this once you have account confirmation enabled for password reset functionality
+                        <p>
+                        @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                        </p>*@
+                                @*</form>*@
+                                <div class="form-links">
+
+                                    <span class="fa fa-mixcloud"></span> <a href="#" style="color :blue"> www.epione.tn /   <span class="fa fa-phone"></span> Téléphone: 71.340.933</a>
                                 </div>
-                            </div>
-                        </div>
+                            </section>
 
-                        <!-- Submit Button-->
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10" >
-                                <input type="submit" value="Log in" class="btn btn-default"  style="background-color:lightblue ;width : 350px ;color :blue ; font-weight:bold" />
-                            </div>
-                        </div>
-                        <p style="padding-left:200px">
-                            @Html.ActionLink("Register as a new user", "Register")
-                        </p>
-                        @* Enable this once you have account confirmation enabled for password reset functionality
-        <p>
-        @Html.ActionLink("Forgot your password?", "ForgotPassword")
-        </p>*@
-                        </form>
-                        <div class="form-links">
 
-                            <span class="fa fa-mixcloud"></span> <a href="#" style="color :blue"> www.epione.tn /   <span class="fa fa-phone"></span> Téléphone: 71.340.933</a>
-                        </div>
+                        }
                     </section>
                 </div>
                 <div class="col-md-4"></div>
