@@ -223,11 +223,19 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+<<<<<<< HEAD
     <Compile Include="Controllers\CalenderController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\DoctorController.cs" />
+=======
+    <Compile Include="Controllers\appnController.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\DashboardDoctorController.cs" />
+>>>>>>> 41868af8af3666b2e198161787ff89e5910f6959
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PatController.cs" />
     <Compile Include="Controllers\PatientController.cs" />
+    <Compile Include="Controllers\StepsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -833,6 +841,7 @@
     <Content Include="Views\Patient\AccueilPatient.cshtml" />
     <Content Include="Views\Course\All.cshtml" />
     <Content Include="Views\Course\Create.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Doctor\Create.cshtml" />
     <Content Include="Views\Doctor\Index.cshtml" />
     <Content Include="Views\Doctor\Edit.cshtml" />
@@ -840,11 +849,62 @@
     <Content Include="Views\Doctor\Details.cshtml" />
     <Content Include="Views\_LayoutCalendar.cshtml" />
     <Content Include="Views\Calender\Index.cshtml" />
+=======
+<<<<<<< HEAD
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\DashboardDoctor\Index.cshtml" />
+    <Content Include="Views\DashboardDoctor\DoctorStat.cshtml" />
+<<<<<<< HEAD
+=======
+=======
+    <Content Include="Views\Course\CreateSteps.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\DashboardDoctor\Index.cshtml" />
+    <Content Include="Views\DashboardDoctor\StatDoctor.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\DashboardDoctor\StatDoctor2.cshtml" />
+=======
+    <Content Include="Views\Course\MonParc.cshtml" />
+    <Content Include="Views\appn\Create.cshtml" />
+    <Content Include="Views\appn\Delete.cshtml" />
+    <Content Include="Views\appn\Details.cshtml" />
+    <Content Include="Views\appn\Edit.cshtml" />
+    <Content Include="Views\appn\Index.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\Pat\Create.cshtml" />
+    <Content Include="Views\Pat\Delete.cshtml" />
+    <Content Include="Views\Pat\Details.cshtml" />
+    <Content Include="Views\Pat\Edit.cshtml" />
+    <Content Include="Views\Pat\Index.cshtml" />
+    <Content Include="Views\Steps\Create.cshtml" />
+    <Content Include="Views\Steps\Delete.cshtml" />
+    <Content Include="Views\Steps\Details.cshtml" />
+    <Content Include="Views\Steps\Edit.cshtml" />
+    <Content Include="Views\Steps\Index.cshtml" />
+    <Content Include="Views\Pat\CreateStep.cshtml" />
+=======
+>>>>>>> 2cc4c008b2557e08a7dd88f308ce23634ad7a4c9
+>>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
+>>>>>>> 21677c91ad720dbb0378ac730f65abce182c91b3
+>>>>>>> c5a7f7540ab703d57b055f2a473d400bed2068c9
+>>>>>>> 41868af8af3666b2e198161787ff89e5910f6959
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\DataTables\" />
+<<<<<<< HEAD
     <Folder Include="Content\Upload\" />
+=======
+<<<<<<< HEAD
+    <Folder Include="Content\TemplateAdmin\bower_components\" />
+    <Folder Include="Content\TemplateAdmin\build\" />
+    <Folder Include="Content\TemplateAdmin\dist\" />
+    <Folder Include="Content\TemplateAdmin\documentation\" />
+    <Folder Include="Content\TemplateAdmin\plugins\" />
+=======
+    <Folder Include="Content\TemplateAdmin\" />
+>>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
+>>>>>>> 41868af8af3666b2e198161787ff89e5910f6959
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -852,7 +912,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
+<<<<<<< HEAD
       <Project>{2936F783-8B62-46F0-B8F5-AC4D30793F88}</Project>
+=======
+      <Project>{2936f783-8b62-46f0-b8f5-ac4d30793f88}</Project>
+>>>>>>> 41868af8af3666b2e198161787ff89e5910f6959
       <Name>Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">

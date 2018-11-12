@@ -117,9 +117,15 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
+<<<<<<< HEAD
     <Compile Include="Migrations\201811111449147_enum2.cs" />
     <Compile Include="Migrations\201811111449147_enum2.Designer.cs">
       <DependentUpon>201811111449147_enum2.cs</DependentUpon>
+=======
+    <Compile Include="Migrations\201811091012298_a.cs" />
+    <Compile Include="Migrations\201811091012298_a.Designer.cs">
+      <DependentUpon>201811091012298_a.cs</DependentUpon>
+>>>>>>> 41868af8af3666b2e198161787ff89e5910f6959
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PiContext.cs" />
@@ -136,6 +142,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201811111449147_enum2.resx">
       <DependentUpon>201811111449147_enum2.cs</DependentUpon>
     </EmbeddedResource>
@@ -352,6 +359,12 @@
     <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_ru.html" />
     <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_sk.html" />
   </ItemGroup>
+=======
+    <EmbeddedResource Include="Migrations\201811091012298_a.resx">
+      <DependentUpon>201811091012298_a.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+>>>>>>> 41868af8af3666b2e198161787ff89e5910f6959
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

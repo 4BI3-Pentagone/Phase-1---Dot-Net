@@ -146,16 +146,17 @@
                             </li>*@
                     </ul>
 
-                    <ul class="nav navbar-nav navbar-right" style="padding-right:10px">
+                   @* <ul class="nav navbar-nav navbar-right" style="padding-right:10px">
 
-                        <li>
-                            <a href="@Url.Action("Login", "Account")">
-                                <span class="fa fa-user" id=""  style="font-size: x-large">
-                                    Log In  </span> 
-                            </a>
-                        </li>
+        <li>
+            <a href="@Url.Action("Login", "Account")">
+                <span class="fa fa-user" id=""  style="font-size: x-large">
+                    Log In  </span>
+            </a>
+        </li>
 
-                    </ul>
+    </ul>*@
+                    @Html.Partial("_LoginPartial")
                 </div><!-- /.navbar-collapse -->
         
                 
