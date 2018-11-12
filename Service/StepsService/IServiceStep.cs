@@ -5,10 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Service.CourseSer
+namespace Service.StepsService
 {
-    public interface IServiceCourse
+    public interface IServiceStep
     {
-      IEnumerable<Patient> GetMyPatients(String d);
     }
 }

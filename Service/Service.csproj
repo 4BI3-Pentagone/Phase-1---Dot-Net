@@ -119,6 +119,8 @@
     <Compile Include="ServiceDoctor.cs" />
     <Compile Include="ServicesDoctor.cs" />
     <Compile Include="Startup.Service.cs" />
+    <Compile Include="StepsService\IServiceStep.cs" />
+    <Compile Include="StepsService\ServiceStep.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
