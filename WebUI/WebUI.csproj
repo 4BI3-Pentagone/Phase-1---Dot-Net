@@ -609,16 +609,27 @@
     <Content Include="Views\Patient\AccueilPatient.cshtml" />
     <Content Include="Views\Course\All.cshtml" />
     <Content Include="Views\Course\Create.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\DashboardDoctor\Index.cshtml" />
+    <Content Include="Views\DashboardDoctor\DoctorStat.cshtml" />
+<<<<<<< HEAD
+=======
+=======
     <Content Include="Views\Course\CreateSteps.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\DashboardDoctor\Index.cshtml" />
     <Content Include="Views\DashboardDoctor\StatDoctor.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\DashboardDoctor\StatDoctor2.cshtml" />
+=======
     <Content Include="Views\Course\MonParc.cshtml" />
     <Content Include="Views\appn\Create.cshtml" />
     <Content Include="Views\appn\Delete.cshtml" />
     <Content Include="Views\appn\Details.cshtml" />
     <Content Include="Views\appn\Edit.cshtml" />
     <Content Include="Views\appn\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Pat\Create.cshtml" />
     <Content Include="Views\Pat\Delete.cshtml" />
     <Content Include="Views\Pat\Details.cshtml" />
@@ -630,11 +641,24 @@
     <Content Include="Views\Steps\Edit.cshtml" />
     <Content Include="Views\Steps\Index.cshtml" />
     <Content Include="Views\Pat\CreateStep.cshtml" />
+=======
+>>>>>>> 2cc4c008b2557e08a7dd88f308ce23634ad7a4c9
+>>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
+>>>>>>> 21677c91ad720dbb0378ac730f65abce182c91b3
+>>>>>>> c5a7f7540ab703d57b055f2a473d400bed2068c9
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\DataTables\" />
+<<<<<<< HEAD
+    <Folder Include="Content\TemplateAdmin\bower_components\" />
+    <Folder Include="Content\TemplateAdmin\build\" />
+    <Folder Include="Content\TemplateAdmin\dist\" />
+    <Folder Include="Content\TemplateAdmin\documentation\" />
+    <Folder Include="Content\TemplateAdmin\plugins\" />
+=======
     <Folder Include="Content\TemplateAdmin\" />
+>>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

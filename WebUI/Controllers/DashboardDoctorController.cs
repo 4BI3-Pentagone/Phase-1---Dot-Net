@@ -8,13 +8,13 @@ namespace WebUI.Controllers
 {
     public class DashboardDoctorController : Controller
     {
-        // GET: DashboardDoctor
+        // GET: DashboardAdmin
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult StatDoctor()
+        public ActionResult DoctorStat()
         {
             return View();
         }

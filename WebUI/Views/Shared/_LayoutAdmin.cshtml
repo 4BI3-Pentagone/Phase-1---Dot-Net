@@ -209,7 +209,11 @@
                 <!-- /.search form -->
                 <!-- sidebar menu: : style can be found in sidebar.less -->
                 <ul class="sidebar-menu" data-widget="tree">
+<<<<<<< HEAD
+                    <li class="header">MAIN NAVIGATION</li>
+=======
                     @*<li class="header">MAIN NAVIGATION</li>*@
+>>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
                     <li class="active treeview">
                         <a href="#">
                             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
@@ -219,7 +223,15 @@
                         </a>
                         <ul class="treeview-menu">
                             <li class="active">
+<<<<<<< HEAD
+                                <a class="fa fa-circle-o" @Html.ActionLink("Dashboard", "DoctorStat", "DashboardDoctor")>
+=======
+<<<<<<< HEAD
+                                <a class="fa fa-circle-o" @Html.ActionLink("Dashboard", "DoctorStat", "DashboardDoctor")>
+=======
                                 <a class="fa fa-circle-o" @Html.ActionLink("Dashboard", "StatDoctor", "DashboardDoctor")>
+>>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
+>>>>>>> 21677c91ad720dbb0378ac730f65abce182c91b3
                                 </a>
                             </li>
                             <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
@@ -257,10 +269,17 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
+<<<<<<< HEAD
                             <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
                             <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
                             <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
                             <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+=======
+                            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> @Html.ActionLink("Dashboard", "StatDoctor", "DashboardDoctor")</a></li>
+                            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+                            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+                            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> @Html.ActionLink("Dashboard", "StatDoctor2", "DashboardDoctor")</a></li>
+>>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
                         </ul>
                     </li>
                     <li class="treeview">
