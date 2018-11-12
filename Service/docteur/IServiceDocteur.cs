@@ -10,6 +10,9 @@ namespace Service.docteur
 {
   public  interface IServiceDocteur: IService<Doctor>
     {
-        IEnumerable<Doctor> GetDoctorsBySpeciality(Speciality s);
+        IEnumerable<Doctor> GetDoctorsById(String id );
+        Doctor GetDOctorByid(String id);
+        IEnumerable<Doctor> GetFiveMostVisitedDoctorsBySpeciality();
+        IEnumerable<Doctor> GetDoctorsByEmail(String email);
     }
 }

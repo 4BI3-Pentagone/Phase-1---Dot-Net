@@ -112,6 +112,7 @@ C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\obj
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Domain.dll.config
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Domain.dll
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Domain.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\DHTMLX.dll
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.dll
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Google.Protobuf.dll
@@ -126,6 +127,8 @@ C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\b
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\MySql.Data.dll
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Newtonsoft.Json.dll
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Owin.dll
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\DHTMLX.pdb
+C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\DHTMLX.xml
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.xml
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\bin\Debug\Google.Protobuf.xml

@@ -46,3 +46,10 @@ textarea {
     z-index: 9999;
     background: url(Images/Preloader_1.gif) center no-repeat #fff; 
 }
+
+.scheduler_container{
+    width:100%;
+    height:600px;
+    border:1px solid #aeaeae;
+}
+    

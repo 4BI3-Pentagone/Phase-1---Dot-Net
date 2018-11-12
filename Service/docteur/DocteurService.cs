@@ -20,12 +20,33 @@ namespace Service.docteur
 
         }
 
-        public IEnumerable<Doctor> GetDoctorsBySpeciality(Speciality s)
+        public IEnumerable<Doctor> GetDoctorsById(String id)
         {
             //return GetMany(p => p.Category == c).OrderBy(p => p.Price) ; 
             //ou bien
             var req = from p in GetMany()
-                      where p.Speciality == s
+                      where p.Id == id
+                      select p;
+            return req;
+        }
+
+        public Doctor GetDOctorByid(String id)
+        {
+            return uow.getRepository<Doctor>().GetById(id);
+        }
+
+        public IEnumerable<Doctor> GetFiveMostVisitedDoctorsBySpeciality()
+        {
+            var req = from p in GetMany()
+                      orderby p.Speciality descending
+                      select p;
+            return req.Take(5);
+        }
+
+        public IEnumerable<Doctor> GetDoctorsByEmail(string email)
+        {
+            var req = from p in GetMany()
+                      where p.Email == email
                       select p;
             return req;
         }

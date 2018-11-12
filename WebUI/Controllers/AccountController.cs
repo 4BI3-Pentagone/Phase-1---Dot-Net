@@ -71,7 +71,7 @@ namespace WebUI.Controllers
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
-
+        public static String UserConnecte;
         //
         // POST: /Account/Login
         [HttpPost]
@@ -79,6 +79,7 @@ namespace WebUI.Controllers
        // [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(AccountViewModels.LoginViewModel model, string returnUrl)
         {
+            
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -91,6 +92,7 @@ namespace WebUI.Controllers
             {
                 case SignInStatus.Success:
                     ModelState.AddModelError("", "Connected.");
+                    UserConnecte=model.Email;
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
