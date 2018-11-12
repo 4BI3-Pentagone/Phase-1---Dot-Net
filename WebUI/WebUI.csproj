@@ -217,6 +217,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\appnController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\DashboardDoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -606,18 +607,42 @@
     <Content Include="Views\Patient\AccueilPatient.cshtml" />
     <Content Include="Views\Course\All.cshtml" />
     <Content Include="Views\Course\Create.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\DashboardDoctor\Index.cshtml" />
     <Content Include="Views\DashboardDoctor\DoctorStat.cshtml" />
+<<<<<<< HEAD
+=======
+=======
+    <Content Include="Views\Course\CreateSteps.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\DashboardDoctor\Index.cshtml" />
+    <Content Include="Views\DashboardDoctor\StatDoctor.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\DashboardDoctor\StatDoctor2.cshtml" />
+=======
+    <Content Include="Views\Course\MonParc.cshtml" />
+    <Content Include="Views\appn\Create.cshtml" />
+    <Content Include="Views\appn\Delete.cshtml" />
+    <Content Include="Views\appn\Details.cshtml" />
+    <Content Include="Views\appn\Edit.cshtml" />
+    <Content Include="Views\appn\Index.cshtml" />
+>>>>>>> 2cc4c008b2557e08a7dd88f308ce23634ad7a4c9
+>>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
+>>>>>>> 21677c91ad720dbb0378ac730f65abce182c91b3
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\DataTables\" />
+<<<<<<< HEAD
     <Folder Include="Content\TemplateAdmin\bower_components\" />
     <Folder Include="Content\TemplateAdmin\build\" />
     <Folder Include="Content\TemplateAdmin\dist\" />
     <Folder Include="Content\TemplateAdmin\documentation\" />
     <Folder Include="Content\TemplateAdmin\plugins\" />
+=======
+    <Folder Include="Content\TemplateAdmin\" />
+>>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -628,9 +653,17 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{2936f783-8b62-46f0-b8f5-ac4d30793f88}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{80b0794a-953f-4095-b8fd-6b87b361c40e}</Project>
       <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServicePattern\ServicePattern.csproj">
+      <Project>{498e3058-8c85-4442-8c96-06135c96d03d}</Project>
+      <Name>ServicePattern</Name>
     </ProjectReference>
     <ProjectReference Include="..\Service\Service.csproj">
       <Project>{e74c8001-7beb-4688-a8df-9f13dcfd8815}</Project>

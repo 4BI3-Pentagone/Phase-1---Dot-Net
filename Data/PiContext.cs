@@ -28,6 +28,7 @@ namespace Data
         public DbSet<Course> Courses { get; set; }
         public DbSet<Chat> Chats { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Debreif> Debreifs { get; set; }
         public DbSet<Repport> Repports { get; set; }
         public DbSet<Rate> Rates { get; set; }
@@ -55,7 +56,22 @@ namespace Data
             p.PasswordHash = "123456789";
             p.UserName = "ah";
             context.Users.Add(p);
+           // context.SaveChanges();
+       
+        List<  Appointment>appointments = new List<Appointment>() {
+                new Appointment {state =State.Done},
+                new Appointment {state =State.Done},
+                new Appointment {state =State.Done},
+                  new Appointment {state =State.Done},
+                    new Appointment {state =State.Done},
+                      new Appointment {state =State.Done},
+                      new Appointment {state =State.Done},
+                        new Appointment {state =State.Done}
+
+            };
+            context.Appointments.AddRange(appointments);
             context.SaveChanges();
         }
+
     }
 }
