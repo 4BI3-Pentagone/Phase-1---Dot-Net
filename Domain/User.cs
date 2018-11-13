@@ -28,5 +28,16 @@ namespace Domain
         //  public String Password { get; set; }
         //   public Gender? gender { get; set; }
         public String ImageName { get; set; }
+
+
+        public virtual ICollection<Post> Posts { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<SubComment> SubComments { get; set; }
+
+        public User()
+        {
+            this.Comments = new HashSet<Comment>();
+            this.SubComments = new HashSet<SubComment>();
+        }
     }
 }

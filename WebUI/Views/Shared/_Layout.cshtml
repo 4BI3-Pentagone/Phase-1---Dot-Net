@@ -65,7 +65,7 @@
                 </button>*@
        
            <a class="navbar-brand" style="color:aquamarine ; font-size:25px ; font-weight:bold;padding-top:0">
-               <img src="~/Content/Images/epione2.png" width="50px" hight="50px" style="padding-top:0 " />
+               @*<img src="~/Content/Images/epione2.png" width="50px" hight="50px" style="padding-top:0 " />*@
            </a>
         
                 @*</div>*@
@@ -79,20 +79,26 @@
                         <li>
 
                             <a href="@Url.Action("Index", "Home")">
-                                <span class="titre1" title="" id="" aria-hidden="true"> Home</span>
+                                <span class="titre1" title="" id="" aria-hidden="true"> <img src="~/Content/Flaticone/house.png" /> Home</span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="@Url.Action("Index", "Post")">
+                                <span class="titre1" title="" id="" aria-hidden="true"><img src="~/Content/Flaticone/forum.png" /> Forum Blog</span>
                             </a>
                         </li>
 
                         <li>
 
                             <a href="@Url.Action("About", "Home")">
-                                <span class="titre1" title="" aria-hidden="true"> About Us</span>
+                                <span class="titre1" title="" aria-hidden="true"><img src="~/Content/Flaticone/stethoscope.png" /> About Us</span>
                             </a>
                         </li>
                         <li>
 
                             <a href="@Url.Action("Contact", "Home")">
-                                <span class="titre1" title="" aria-hidden="true"> Contact Us</span>
+                                <span class="titre1" title="" aria-hidden="true"><img src="~/Content/Flaticone/phone.png" /> Contact Us</span>
                             </a>
                         </li>
 
@@ -188,6 +194,7 @@
 @*<footer>
     </footer>*@
 </html>
+@RenderSection("scripts", required: false)
 
 
 <script type="text/javascript">

@@ -1,7 +1,6 @@
 ﻿using Data;
 using Data.Infrastructure;
 using Domain;
-using Service.PatientService;
 using ServicePattern;
 using System;
 using System.Collections.Generic;

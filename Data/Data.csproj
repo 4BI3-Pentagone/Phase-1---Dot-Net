@@ -117,6 +117,22 @@
     <Compile Include="Migrations\201811091012298_a.Designer.cs">
       <DependentUpon>201811091012298_a.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811101522597_Forum.cs" />
+    <Compile Include="Migrations\201811101522597_Forum.Designer.cs">
+      <DependentUpon>201811101522597_Forum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811101601161_ForumMJ.cs" />
+    <Compile Include="Migrations\201811101601161_ForumMJ.Designer.cs">
+      <DependentUpon>201811101601161_ForumMJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811112040087_ChangementEntiteFinal.cs" />
+    <Compile Include="Migrations\201811112040087_ChangementEntiteFinal.Designer.cs">
+      <DependentUpon>201811112040087_ChangementEntiteFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811131155140_cp.cs" />
+    <Compile Include="Migrations\201811131155140_cp.Designer.cs">
+      <DependentUpon>201811131155140_cp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PiContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -134,6 +150,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201811091012298_a.resx">
       <DependentUpon>201811091012298_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811101522597_Forum.resx">
+      <DependentUpon>201811101522597_Forum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811101601161_ForumMJ.resx">
+      <DependentUpon>201811101601161_ForumMJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811112040087_ChangementEntiteFinal.resx">
+      <DependentUpon>201811112040087_ChangementEntiteFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811131155140_cp.resx">
+      <DependentUpon>201811131155140_cp.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
