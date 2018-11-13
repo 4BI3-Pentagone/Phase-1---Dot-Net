@@ -142,8 +142,6 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Service\bin\Debug\fr\Microsoft
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Service\obj\Debug\Service.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Service\obj\Debug\Service.pdb
-<<<<<<< HEAD
-=======
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Service\bin\Debug\Service.dll.config
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Service\bin\Debug\Service.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Service\bin\Debug\Service.pdb
@@ -186,7 +184,6 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Service\bin\Debug\fr\Microsoft.AspNet
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Service\obj\Debug\Service.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Service\obj\Debug\Service.pdb
->>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Service\bin\Debug\Service.dll.config
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Service\bin\Debug\Service.dll
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Service\bin\Debug\Service.pdb

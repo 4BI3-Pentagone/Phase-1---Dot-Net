@@ -134,8 +134,6 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\ServicePattern\bin\Debug\fr\Mi
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\ServicePattern\obj\Debug\ServicePattern.csprojResolveAssemblyReference.cache
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\ServicePattern\obj\Debug\ServicePattern.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\ServicePattern\obj\Debug\ServicePattern.pdb
-<<<<<<< HEAD
-=======
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\ServicePattern.dll.config
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\ServicePattern.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\ServicePattern.pdb
@@ -176,7 +174,6 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\fr\Microsoft
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\obj\Debug\ServicePattern.csprojResolveAssemblyReference.cache
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\obj\Debug\ServicePattern.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\obj\Debug\ServicePattern.pdb
->>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\ServicePattern\bin\Debug\ServicePattern.dll.config
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\ServicePattern\bin\Debug\ServicePattern.dll
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\ServicePattern\bin\Debug\ServicePattern.pdb

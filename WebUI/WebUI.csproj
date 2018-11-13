@@ -44,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DinkToPdf, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DinkToPdf.1.0.8\lib\netstandard1.6\DinkToPdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
       <Private>True</Private>
@@ -83,6 +87,13 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.13\lib\net452\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="pdfcrowd">
+      <HintPath>..\pdfcrowd-4.3.5\pdfcrowd.dll</HintPath>
+    </Reference>
+    <Reference Include="Rotativa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rotativa.1.6.4\lib\net40\Rotativa.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -376,6 +387,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Rotativa\wkhtmltopdf.exe" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -445,6 +457,7 @@
     <Content Include="Content\IntefaceLogin\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\IntefaceLogin\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\IntefaceLogin\fonts\FontAwesome.otf" />
+    <Content Include="App_Browsers\qt.browser" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
@@ -609,27 +622,19 @@
     <Content Include="Views\Patient\AccueilPatient.cshtml" />
     <Content Include="Views\Course\All.cshtml" />
     <Content Include="Views\Course\Create.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\DashboardDoctor\Index.cshtml" />
     <Content Include="Views\DashboardDoctor\DoctorStat.cshtml" />
-<<<<<<< HEAD
-=======
-=======
     <Content Include="Views\Course\CreateSteps.cshtml" />
-    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\DashboardDoctor\Index.cshtml" />
     <Content Include="Views\DashboardDoctor\StatDoctor.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\DashboardDoctor\StatDoctor2.cshtml" />
-=======
     <Content Include="Views\Course\MonParc.cshtml" />
     <Content Include="Views\appn\Create.cshtml" />
     <Content Include="Views\appn\Delete.cshtml" />
     <Content Include="Views\appn\Details.cshtml" />
     <Content Include="Views\appn\Edit.cshtml" />
     <Content Include="Views\appn\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Pat\Create.cshtml" />
     <Content Include="Views\Pat\Delete.cshtml" />
     <Content Include="Views\Pat\Details.cshtml" />
@@ -641,24 +646,16 @@
     <Content Include="Views\Steps\Edit.cshtml" />
     <Content Include="Views\Steps\Index.cshtml" />
     <Content Include="Views\Pat\CreateStep.cshtml" />
-=======
->>>>>>> 2cc4c008b2557e08a7dd88f308ce23634ad7a4c9
->>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
->>>>>>> 21677c91ad720dbb0378ac730f65abce182c91b3
->>>>>>> c5a7f7540ab703d57b055f2a473d400bed2068c9
+    <Content Include="Views\Pat\getSteps.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\DataTables\" />
-<<<<<<< HEAD
     <Folder Include="Content\TemplateAdmin\bower_components\" />
     <Folder Include="Content\TemplateAdmin\build\" />
     <Folder Include="Content\TemplateAdmin\dist\" />
     <Folder Include="Content\TemplateAdmin\documentation\" />
     <Folder Include="Content\TemplateAdmin\plugins\" />
-=======
-    <Folder Include="Content\TemplateAdmin\" />
->>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
