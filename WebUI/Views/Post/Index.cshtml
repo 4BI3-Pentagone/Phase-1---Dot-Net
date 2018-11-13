@@ -1,0 +1,171 @@
+﻿@using Domain @model IEnumerable<Domain.Post>
+
+@{
+    ViewBag.Title = "Index";
+    ViewBag.page = "Gestion des Posts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<CategoriePost> listcategorie = ViewBag.categoriepost;
+     var GetUserId = ViewBag.GetUserId;
+}
+
+   <style>
+
+      
+       body{background-image:url(../../Content/Images/ffff.png)}
+   </style>
+
+
+<!-- Page Content -->
+<div class="container-fluid">
+    <form action="/maladie/Index" method="post" class="login-form" >
+
+        <!-- Blog Search Well -->
+        <div class="well" style=" background-color:transparent ; margin-top: 30px  " >
+
+            <div class="input-group" >
+                <input type="text" class="form-control" name="rechfilter" style="margin-left:200px ; background-color:beige" >
+                <span class="input-group-btn" style="padding-right:300px">
+                    <button class="btn btn-success" type="submit" formaction=@Url.Action("TermsAccept") formmethod="post" style="width:100px">
+                        <span class="glyphicon glyphicon-search" ></span>
+                        Submit  </button>
+                </span>
+            </div>
+            <!-- /.input-group -->
+        </div>
+    </form>
+
+
+
+
+
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+            <h2 class="page-header"  style="color:firebrick;font-weight:bolder; padding-left:500px;padding-bottom:20px">
+                EPIONE Blog
+                <small style="color:orange">Post</small>
+            </h2>
+
+            @foreach (var item in Model)
+            {
+                var name = "";
+                if (@item.User != null)
+                {
+                    name = @item.User.FirstName;
+                }
+
+
+                    <!-- First Blog Post -->
+                <a href="@Url.Action("GetResponse", "Comments",new { id = item.PostID })">
+
+                    <h3 style="color:ghostwhite">
+                        @item.Titre
+
+                    </h3>
+                </a>
+                    <p class="lead" style="color:darkblue">
+                        publish by   @name
+                    </p>
+                    <p><span class="glyphicon glyphicon-time"></span> Posted on @item.PostedDate</p>
+                    @*<hr>
+                        <img class="img-responsive" src="http://placehold.it/700x100" alt="">
+                        <hr>
+                        <p>    @item.Message.</p>*@
+                    <a class="btn btn-info" href="@Url.Action("GetResponse", "Comments", new {id = item.PostID})">
+                        Read More <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                     if (GetUserId != item.User.Id)
+                        {
+
+                        }
+                        else
+                        {
+                    <a class="btn btn-danger" href="@Url.Action("Delete", "Post", new { id = item.PostID })">
+                        Delete <span class="glyphicon glyphicon-remove"></span>
+                    </a>
+                    <a class="btn btn-warning" href="@Url.Action("Edit", "Post", new { id = item.PostID })">
+                      Update <span class="glyphicon glyphicon-refresh"></span>
+                    </a>
+                    }
+                    <hr>
+            }
+
+            <!-- Pager -->
+            <ul class="pager">
+                <li class="previous">
+                    <a href="#">&larr; Older</a>
+                </li>
+                <li class="next">
+                    <a href="#">Newer &rarr;</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Blog Sidebar Widgets Column -->
+        <div class="col-md-4" style="padding-left:80px">
+            
+            <!-- Blog Categories Well -->
+            <div class="well" style="background-image:url(../../Content/Images/kk.jpg) ;opacity:1.4 ;width:460px;height:450px ; border:unset ">
+                <h3>Blog Categories</h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled">
+                            @{
+                                int i = 0;
+                                foreach (var categoriepost in listcategorie)
+                                {
+                                    <li style="font-size:18px ;color:blue ; font-weight:bold ; padding-bottom:20px ;flood-opacity:initial">
+                                        <a href="@Url.Action("Index", "Post", new {idcat = categoriepost.Id})">@categoriepost.Libelle</a>
+                                    </li>
+
+                                }
+
+                            }
+                        </ul>
+                    </div>
+
+
+                    <!-- /.col-lg-6 -->
+                </div>
+                <!-- /.row -->
+            </div>
+
+            <!-- Side Widget Well -->
+            @if (!User.Identity.IsAuthenticated)
+            {
+
+            }
+            else
+            {
+                <a class="btn btn-success btn-lg"   style="width:460px" href="@Url.Action("create", "Post")">
+                    <span class="glyphicon glyphicon-plus"> </span>     Add Post
+                </a>
+                
+            }
+    </div>
+
+</div>
+<!-- /.row -->
+
+<hr>
+
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</footer>
+
+    </div>
+<!-- /.container -->
+<!-- jQuery -->
+<script src="~/Scripts/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="~/Scripts/bootstrap.min.js"></script>
+

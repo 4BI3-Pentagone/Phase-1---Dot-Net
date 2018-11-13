@@ -837,7 +837,6 @@
     <Content Include="Views\Doctors\Index.cshtml" />
     <Content Include="Views\Doctors\Details.cshtml" />
     <Content Include="Views\Doctors\Calendar_doc.cshtml" />
-    <Content Include="Views\Shared\layout2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

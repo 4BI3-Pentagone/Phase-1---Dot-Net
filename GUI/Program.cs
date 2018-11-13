@@ -14,16 +14,39 @@ namespace GUI
         static void Main(string[] args)
         {
             PiContext ctx = new PiContext();
-          /*  User u = new User { Email = "emel.garouachi@esprit.tn",
-             Password= "1234",
-            adress = "1 rue de sfax",
-            UserName="emel",
-            gender=Gender.
-            female,
-            lastName="Garouachi",
-            birthDate=DateTime.Now};*/
-        //    ctx.Users.Add(u);
-         //   ctx.SaveChanges();
+            Course c = new Course {
+            };
+
+                 Patient u = new Patient { Email = "emhi@eaaaa.tn",
+                   adress = "1 rue de sfax",
+                   UserName="emel",
+                   PasswordHash="sameh",
+                   lastName="Garouachi",
+                   birthDate=DateTime.Now,
+                   course=c };
+                 //    ctx.Users.Add(u);
+                 //   ctx.SaveChanges();
+                 //  c.steps
+                 //  SC.Add(c);
+               //  ctx.Courses.Add(c);
+                 ctx.Users.Add(u);
+
+
+               List<Appointment> appointments = new List<Appointment>() {
+                   new Appointment {state =State.Done ,Date=DateTime.Now},
+                   new Appointment {state =State.Done,Date=DateTime.Now},
+                   new Appointment {state =State.Done,Date=DateTime.Now},
+                     new Appointment {state =State.Done,Date=DateTime.Now},
+                       new Appointment {state =State.Done,Date=DateTime.Now},
+                         new Appointment {state =State.Done,Date=DateTime.Now},
+                         new Appointment {state =State.Done,Date=DateTime.Now},
+                           new Appointment {state =State.Done,Date=DateTime.Now}
+
+               };
+               ctx.Appointments.AddRange(appointments);
+               ctx.SaveChanges();
+
+
         }
     }
 }

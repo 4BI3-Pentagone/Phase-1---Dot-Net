@@ -11,8 +11,13 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Service.appointmentService
 {
+<<<<<<< HEAD
     public class ServiceAppointment : Service<Appointment>,IServiceAppointment
       
+=======
+    public class ServiceAppointment : Service<Appointment>, IServiceAppointment
+
+>>>>>>> 3bba1ba9699804c5097019f601711d2d51f211e7
     {
        
 
@@ -20,12 +25,17 @@ namespace Service.appointmentService
             static DatabaseFactory DBF = new DatabaseFactory();
             static IUnitOfWork UOW = new UnitOfWork(DBF);
             PiContext pc;
-            IServicePatient Ips;
-            IServicesDoctor Ids;
+       //     IServicePatient Ips;
+          //  IServicesDoctor Ids;
             public ServiceAppointment() : base(UOW)
             {
                 pc = new PiContext();
+<<<<<<< HEAD
                 
+=======
+               // ps = new ServicePatient();
+               // ds = new ServicesDoctor();
+>>>>>>> 3bba1ba9699804c5097019f601711d2d51f211e7
 
             }
         public void CreateAppointment(Appointment A)
@@ -49,8 +59,29 @@ namespace Service.appointmentService
                 this.Commit();
             }
 
-        }
 
+       /* public Dictionary<string, int> StatDoctor(int id)
+        {
+            {
+
+                var ss = from Appointment a in GetAllS()
+                         group a by a.Date into g
+                         select new { g.Key, Count = g.Count() };
+                Dictionary<string, int> depart = new Dictionary<string, int>();
+                foreach (var t in ss)
+                {
+                    depart.Add(t.Key.ToString(), t.Count);
+                    Console.WriteLine(t.Key + "" + t.Count);
+                }
+                return depart;
+            }
+        }*/
 
     }
 
+<<<<<<< HEAD
+=======
+
+    
+}
+>>>>>>> 3bba1ba9699804c5097019f601711d2d51f211e7

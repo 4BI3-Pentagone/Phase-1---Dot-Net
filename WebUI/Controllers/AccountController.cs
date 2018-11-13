@@ -12,7 +12,9 @@ using WebUI.Models;
 using ServicePattern;
 using Domain;
 using Service.Identity;
-
+using Service.CourseSer;
+using Data;
+//a
 namespace WebUI.Controllers
 {
     [Authorize]
@@ -25,10 +27,11 @@ namespace WebUI.Controllers
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
         private readonly ServiceUser _userService = new ServiceUser();
-
-
+        PiContext ctx = new PiContext();
+        ServiceCourse SC = new ServiceCourse();
         public ApplicationSignInManager SignInManager
         {
+            
             get
             {
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
@@ -71,7 +74,7 @@ namespace WebUI.Controllers
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
-
+        public static String UserConnecte;
         //
         // POST: /Account/Login
         [HttpPost]
@@ -79,6 +82,7 @@ namespace WebUI.Controllers
        // [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(AccountViewModels.LoginViewModel model, string returnUrl)
         {
+            
             if (!ModelState.IsValid)
             {
                 return View(model);
@@ -91,6 +95,7 @@ namespace WebUI.Controllers
             {
                 case SignInStatus.Success:
                     ModelState.AddModelError("", "Connected.");
+                    UserConnecte=model.Email;
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
@@ -146,19 +151,34 @@ namespace WebUI.Controllers
                     // Volunteer Account type selected:
                     case Domain.EAccountType.Patient:
                         {
+
+                         //   String s=User.Identity.GetUserName();
+
                             // create new volunteer and map form values to the instance
                             Patient v = new Patient { UserName = model.Email, Email = model.Email , FirstName = model.FirstName };
                             v.EmailConfirmed = true;
                             v.SecurityStamp = null;
+                            Course c = new Course();                       
+                            v.course = c;
+                            SC.Add(c);
+                            SC.Commit();
                             result = await UserManager.CreateAsync(v, model.Password);
+                          
+                            //  c.steps
+                            //  SC.Add(c);
+                            //     ctx.Courses.Add(c);
+                            //      ctx.SaveChanges();
+                         
+                            // ctx.Users.Add(u);
 
-                            // Add volunteer role to the new User
+                         //   ctx.SaveChanges();
+
                             if (result.Succeeded)
                             {
-                               // UserManager.AddToRole(v.Id, EAccountType.Patient.ToString());
+                                
+                            
                                 await SignInManager.SignInAsync(v, isPersistent: false, rememberBrowser: false);
-                                // Email confirmation here
-
+                                 
                                 return RedirectToAction("Index", "Home");
                             }
                             AddErrors(result);
@@ -170,9 +190,10 @@ namespace WebUI.Controllers
                         {
                             // create new Ngo and map form values to the instance
                             Doctor ngo = new Doctor { UserName = model.Email, Email = model.Email ,FirstName=model.FirstName};
-                            result = await UserManager.CreateAsync(ngo, model.Password);
                             ngo.EmailConfirmed = true;
                             ngo.SecurityStamp = null;
+                            result = await UserManager.CreateAsync(ngo, model.Password);
+                           
                             // Add Ngo role to the new User
                             if (result.Succeeded)
                             {
@@ -181,7 +202,7 @@ namespace WebUI.Controllers
 
                                 return RedirectToAction("Index", "Home");
                             }
-                           // AddErrors(result);
+                           AddErrors(result);
                         }
                         break;
                 }
