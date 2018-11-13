@@ -32,6 +32,12 @@ namespace Data
         public DbSet<Repport> Repports { get; set; }
         public DbSet<Rate> Rates { get; set; }
      public DbSet<Step> Steps { get; set; }
+        public DbSet<Question> Quetions { get; set; }
+        public DbSet<Reponse> Reponses { get; set; }
+        public virtual DbSet<Comment> Comments { get; set; }
+        public virtual DbSet<Post> Posts { get; set; }
+        public virtual DbSet<SubComment> SubComments { get; set; }
+        public virtual DbSet<CategoriePost> CategoriePosts { get; set; }
 
 
 
@@ -55,6 +61,48 @@ namespace Data
             p.PasswordHash = "123456789";
             p.UserName = "ah";
             context.Users.Add(p);
+
+
+
+            CategoriePost cp = new CategoriePost();
+            cp.Libelle = "Denatire";
+            cp.Description="Dentaire";
+            context.CategoriePosts.Add(cp);
+
+
+            CategoriePost cp2 = new CategoriePost();
+            cp.Libelle = "Cardio";
+            cp.Description = "Cardio";
+            context.CategoriePosts.Add(cp2);
+
+            CategoriePost cp3 = new CategoriePost();
+            cp.Libelle = "Esthetique";
+            cp.Description = "Esthetique";
+            context.CategoriePosts.Add(cp2);
+
+            CategoriePost cp4 = new CategoriePost();
+            cp.Libelle = "Esthetique";
+            cp.Description = "Esthetique";
+            context.CategoriePosts.Add(cp4);
+
+
+            CategoriePost cp5 = new CategoriePost();
+            cp.Libelle = "gynecologi.";
+            cp.Description = "gynecologie.";
+            context.CategoriePosts.Add(cp4);
+
+
+            CategoriePost cp6 = new CategoriePost();
+            cp.Libelle = "pediatrie";
+            cp.Description = "pediatrie";
+            context.CategoriePosts.Add(cp6);
+
+            CategoriePost cp7 = new CategoriePost();
+            cp.Libelle = "neurologie";
+            cp.Description = "neurologie";
+            context.CategoriePosts.Add(cp6);
+
+
            // context.SaveChanges();
        
         List<  Appointment>appointments = new List<Appointment>() {
