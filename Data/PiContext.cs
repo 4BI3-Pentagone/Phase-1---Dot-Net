@@ -62,6 +62,7 @@ namespace Data
             p.PasswordHash = "123456789";
             p.UserName = "ah";
             context.Users.Add(p);
+<<<<<<< HEAD
 
 
             CategoriePost cp = new CategoriePost();
@@ -102,7 +103,24 @@ namespace Data
             cp.Description = "neurologie";
             context.CategoriePosts.Add(cp6);
 
+=======
+           // context.SaveChanges();
+       
+        List<  Appointment>appointments = new List<Appointment>() {
+                new Appointment {state =State.Done},
+                new Appointment {state =State.Done},
+                new Appointment {state =State.Done},
+                  new Appointment {state =State.Done},
+                    new Appointment {state =State.Done},
+                      new Appointment {state =State.Done},
+                      new Appointment {state =State.Done},
+                        new Appointment {state =State.Done}
+
+            };
+            context.Appointments.AddRange(appointments);
+>>>>>>> 22b02e64d51a80a21f57cb838d3d3f0e4910b095
             context.SaveChanges();
         }
+
     }
 }

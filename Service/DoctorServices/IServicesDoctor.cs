@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Service.DoctorServices
 {
-    interface IDoctorServices
+  /*  interface IDoctorServices
     {
     }
+    */
 }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Service.PatientService
 {
-    public class ServicePatient : Service<Domain.Patient>, IServicePatient
+    public class ServicePatient : Service<Patient>, IServicePatient
 
     {
 
@@ -20,10 +20,10 @@ namespace Service.PatientService
         static IUnitOfWork UOW = new UnitOfWork(DBF);
         PiContext pc;
 
-
+        
         public ServicePatient() : base(UOW)
         {
-            pc = new PiContext();
+          //  pc = new PiContext();
 
 
         }
@@ -39,4 +39,5 @@ namespace Service.PatientService
 
 
     }
+
 }
