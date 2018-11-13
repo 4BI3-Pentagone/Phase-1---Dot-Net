@@ -1,11 +1,8 @@
 ﻿using Data;
 using Data.Infrastructure;
 using Domain;
-<<<<<<< HEAD
-=======
 using Service.appointmentService;
 using Service.PatientService;
->>>>>>> 22b02e64d51a80a21f57cb838d3d3f0e4910b095
 using ServicePattern;
 using System;
 using System.Collections.Generic;

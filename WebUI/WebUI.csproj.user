@@ -6,36 +6,21 @@
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     <WebStackScaffolding_LayoutPageFile>~/Views/_LayoutCalendar.cshtml</WebStackScaffolding_LayoutPageFile>
-=======
-<<<<<<< HEAD
     <WebStackScaffolding_LayoutPageFile>~/Views/Shared/_LayoutAdmin.cshtml</WebStackScaffolding_LayoutPageFile>
-=======
->>>>>>> 22b02e64d51a80a21f57cb838d3d3f0e4910b095
     <WebStackScaffolding_LayoutPageFile />
->>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <ProjectView>ProjectFiles</ProjectView>
     <WebStackScaffolding_DbContextTypeFullName>Data.PiContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_LayoutPageFile>~/Views/Shared/_Layout.cshtml</WebStackScaffolding_LayoutPageFile>
->>>>>>> 41868af8af3666b2e198161787ff89e5910f6959
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <UseIISExpress>true</UseIISExpress>
     <ProjectView>ShowAllFiles</ProjectView>
-<<<<<<< HEAD
     <ToolsVersionPromptShown>3.1</ToolsVersionPromptShown>
-=======
     <UseIISExpress>true</UseIISExpress>
-<<<<<<< HEAD
-=======
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
->>>>>>> e60248d0369e76ffa555ab9475d66b8e7d31a3f3
->>>>>>> 41868af8af3666b2e198161787ff89e5910f6959
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

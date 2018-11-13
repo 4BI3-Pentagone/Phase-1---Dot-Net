@@ -107,13 +107,10 @@
     <Compile Include="appointmentService\IServiceAppointment.cs" />
     <Compile Include="appointmentService\ServiceAppointment.cs" />
     <Compile Include="AppService.cs" />
-<<<<<<< HEAD
     <Compile Include="CommentService\CommentService.cs" />
     <Compile Include="CommentService\ICommentService.cs" />
-=======
     <Compile Include="docteur\DocteurService.cs" />
     <Compile Include="docteur\IServiceDocteur.cs" />
->>>>>>> 22b02e64d51a80a21f57cb838d3d3f0e4910b095
     <Compile Include="CourseSer\IServiceCourse.cs" />
     <Compile Include="CourseSer\ServiceCourse.cs" />
     <Compile Include="DoctorServices\IServicesDoctor.cs" />
@@ -121,15 +118,12 @@
     <Compile Include="Identity\ApplicationSignInManager.cs" />
     <Compile Include="Identity\ApplicationUserManager.cs" />
     <Compile Include="Identity\IServiceUser.cs" />
-<<<<<<< HEAD
     <Compile Include="PostService\PostService.cs" />
     <Compile Include="PostService\IPostService.cs" />
-=======
     <Compile Include="IserviceDoctor.cs" />
     <Compile Include="IServicesDoctor.cs" />
     <Compile Include="PatientService\IServicePatient.cs" />
     <Compile Include="PatientService\ServicePatient.cs" />
->>>>>>> 22b02e64d51a80a21f57cb838d3d3f0e4910b095
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Identity\ServiceUser.cs" />
     <Compile Include="ServiceDoctor.cs" />
@@ -156,9 +150,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup />
-=======
   <ItemGroup>
     <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler.css" />
     <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler.js" />
@@ -371,7 +363,6 @@
     <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_ru.html" />
     <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_sk.html" />
   </ItemGroup>
->>>>>>> 22b02e64d51a80a21f57cb838d3d3f0e4910b095
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
