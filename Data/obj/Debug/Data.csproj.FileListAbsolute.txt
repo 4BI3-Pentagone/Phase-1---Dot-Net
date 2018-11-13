@@ -76,7 +76,6 @@ C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\Data\bin\Debug\fr\Micr
 C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\Data\obj\Debug\Data.dll
 C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\Data\obj\Debug\Data.pdb
-<<<<<<< HEAD
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\bin\Debug\Data.dll.config
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\bin\Debug\Data.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\bin\Debug\Data.pdb
@@ -116,7 +115,6 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\bin\Debug\fr\Microsoft.As
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\obj\Debug\Data.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\obj\Debug\Data.pdb
-=======
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Data.dll.config
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Data.dll
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Data\bin\Debug\Data.pdb

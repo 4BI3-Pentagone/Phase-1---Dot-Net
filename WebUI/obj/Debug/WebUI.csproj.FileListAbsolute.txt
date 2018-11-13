@@ -242,7 +242,6 @@ C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\WebUI\bin\fr\Microsoft
 C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.dll
 C:\Users\Emel\Desktop\Phase-1---Dot-Net\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.pdb
-<<<<<<< HEAD
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\ApplicationInsights.config
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\roslyn\csc.exe
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -365,7 +364,6 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\fr\Microsoft.Owin.Se
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.pdb
-=======
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\roslyn\csc.exe
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\esprit\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
@@ -736,13 +734,11 @@ C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.dll
 C:\Users\AZUS\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.pdb
-<<<<<<< HEAD
 C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\DinkToPdf.dll
 C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\pdfcrowd.dll
 C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\DinkToPdf.pdb
 C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\DinkToPdf.xml
 C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\WebUI\bin\Rotativa.dll
-=======
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\ApplicationInsights.config
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\roslyn\csc.exe
@@ -868,4 +864,3 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\fr\Microsoft.Owin.Se
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.pdb
->>>>>>> f0af2b6c88d25033d102d5e0d19c9bc46f610398

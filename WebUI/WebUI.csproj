@@ -46,13 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< HEAD
+
     <Reference Include="DinkToPdf, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DinkToPdf.1.0.8\lib\netstandard1.6\DinkToPdf.dll</HintPath>
-=======
+    </Reference>
     <Reference Include="DHTMLX, Version=3.4.6717.29296, Culture=neutral, PublicKeyToken=53f24791214eb8ac, processorArchitecture=MSIL">
       <HintPath>..\packages\DHTMLX.Scheduler.NET.3.4.2.0\lib\DHTMLX.dll</HintPath>
->>>>>>> f0af2b6c88d25033d102d5e0d19c9bc46f610398
       <Private>True</Private>
     </Reference>
     <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
@@ -717,11 +716,8 @@
     <Content Include="Content\IntefaceLogin\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\IntefaceLogin\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\IntefaceLogin\fonts\FontAwesome.otf" />
-<<<<<<< HEAD
     <Content Include="App_Browsers\qt.browser" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-=======
->>>>>>> f0af2b6c88d25033d102d5e0d19c9bc46f610398
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap4.js" />
@@ -891,8 +887,6 @@
     <Content Include="Views\Patient\AccueilPatient.cshtml" />
     <Content Include="Views\Course\All.cshtml" />
     <Content Include="Views\Course\Create.cshtml" />
-<<<<<<< HEAD
-=======
     <Content Include="Views\Question\Create2.cshtml" />
     <Content Include="Views\Question\Create.cshtml" />
     <Content Include="Views\Question\Index.cshtml" />
@@ -911,7 +905,6 @@
     <Content Include="Views\Doctor\Details.cshtml" />
     <Content Include="Views\_LayoutCalendar.cshtml" />
     <Content Include="Views\Calender\Index.cshtml" />
->>>>>>> f0af2b6c88d25033d102d5e0d19c9bc46f610398
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\DashboardDoctor\Index.cshtml" />
     <Content Include="Views\DashboardDoctor\DoctorStat.cshtml" />
@@ -936,10 +929,7 @@
     <Content Include="Views\Steps\Edit.cshtml" />
     <Content Include="Views\Steps\Index.cshtml" />
     <Content Include="Views\Pat\CreateStep.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Pat\getSteps.cshtml" />
-=======
->>>>>>> f0af2b6c88d25033d102d5e0d19c9bc46f610398
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -949,10 +939,7 @@
     <Folder Include="Content\TemplateAdmin\dist\" />
     <Folder Include="Content\TemplateAdmin\documentation\" />
     <Folder Include="Content\TemplateAdmin\plugins\" />
-<<<<<<< HEAD
-=======
     <Folder Include="Content\Upload\" />
->>>>>>> f0af2b6c88d25033d102d5e0d19c9bc46f610398
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -978,10 +965,11 @@
       <Name>Service</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
+<ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
-  <ItemGroup>
+
+    <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <PropertyGroup>
