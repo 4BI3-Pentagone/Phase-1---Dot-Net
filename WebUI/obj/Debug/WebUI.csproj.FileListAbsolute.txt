@@ -736,3 +736,7 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\fr\Microsoft.Owin.Se
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.dll
 C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\obj\Debug\WebUI.pdb
+C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\WebUI\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
