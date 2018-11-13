@@ -1,0 +1,134 @@
+﻿@model IEnumerable<WebUI.Models.DocterModels>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+<script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                type: 'GET',
+                url: '/Doctors/GetCountries',
+                datatype: 'JSON',
+                data: {},
+                success: function (data) {
+                    $('#employeeDropDownList').empty();
+                    $('#employeeDropDownList').append("<option value='0'>Select</option>");
+                    $.each(data, function (i, item) {
+                        $('#employeeDropDownList').append("<option value='" + item.Id + "'>" + item.Text + "</option>")
+                    });
+                },
+                error: function (data) { alert(data.responseText); }
+            });
+
+            $("#employeeDropDownList").change(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: '/Doctors/GetEmployees',
+                    datatype: 'JSON',
+                    data: { 'speciality': $(this).val() },
+                    success: function (data) {
+                        $('#example1 tbody').empty();
+                        $.each(data, function (i, item) {
+                            var rows = "<tr>" +
+                                       
+                                       "<td>" + item.FirstName + "</td>" +
+                                       "<td>" + item.LastName + "</td>" +
+                                       "<td>" + item.adress + "</td>" +
+                                       "<td>" + item.ImageName + "</td>" +
+                                       "<td>" + item.speciality + "</td>" +
+                                       "</tr>";
+                            $('#example1 tbody').append(rows);
+                        });
+                    },
+                    error: function (data) { alert(data.responseText); }
+                });
+            });
+        });
+</script>
+<fieldset>
+    <legend>doctors by speciality</legend>
+    <div>
+    </div>
+    <select id="employeeDropDownList" name="employeeDropDownList" class="form-control select2 select2-hidden-accessible"
+            style="width: 100%;"  aria-hidden="true">
+        <option value="0">Select</option>
+        <option value="1">Generalist</option>
+        <option value="2">cardiologue</option>
+    </select>
+    </div>
+       
+        
+        
+    </div>
+    <br />
+    <div id="target">
+    </div>
+    <div id="log">
+    </div>
+</fieldset>
+
+<table class="table">
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lastName)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.adress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.speciality)
+        </th>
+       
+       
+        
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lastName)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.adress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.speciality)
+        </td>
+        
+        
+        
+      
+       
+        <td>
+           
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) 
+        
+        </td>
+    </tr>
+}
+
+</table>

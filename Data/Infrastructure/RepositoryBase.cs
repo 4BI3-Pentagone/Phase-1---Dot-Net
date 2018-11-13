@@ -19,14 +19,11 @@ namespace Data.Infrastructure
         {
             this.databaseFactory = dbFactory;
             dbset = DataContext.Set<T>();
-
-
         }
         protected PiContext DataContext
         {
             get { return dataContext = databaseFactory.DataContext; }
         }
-
         #region Synch Methods
         public virtual void Add(T entity)
         {
@@ -34,6 +31,7 @@ namespace Data.Infrastructure
         }
         public virtual void Update(T entity)
         {
+
             dbset.Attach(entity);
             dataContext.Entry(entity).State = EntityState.Modified;
         }
@@ -55,10 +53,7 @@ namespace Data.Infrastructure
         {
             return dbset.Find(id);
         }
-        //public virtual IEnumerable<T> GetAll()
-        //{
-        //    return dbset.ToList();
-        //}
+      
 
         public virtual IEnumerable<T> GetMany(Expression<Func<T, bool>> where = null, Expression<Func<T, bool>> orderBy = null)
         {
@@ -76,10 +71,32 @@ namespace Data.Infrastructure
         public T Get(Expression<Func<T, bool>> where)
         {
             return dbset.Where(where).FirstOrDefault<T>();
-        } 
-        #endregion
+        }
 
-   
-      
+
+        #endregion
+        #region Async methos
+
+
+        //public async Task<int> CountAsync()
+        //{
+        //    return await dbset.CountAsync();
+        //}
+
+        //public async Task<List<T>> GetAllAsync()
+        //{
+        //    return await dbset.ToListAsync();
+        //}
+
+        //public async Task<T> FindAsync(Expression<Func<T, bool>> match)
+        //{
+        //    return await dbset.SingleOrDefaultAsync(match);
+        //}
+
+        //public async Task<List<T>> FindAllAsync(Expression<Func<T, bool>> match)
+        //{
+        //    return await dbset.Where(match).ToListAsync();
+        //}
+        #endregion
     }
 }

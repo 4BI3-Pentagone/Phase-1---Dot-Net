@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 
 namespace Service.PatientService
 {
-    public class ServicePatient : Service<Domain.Patient>, IServicePatient
-
+    public class ServicePatient : Service<Patient>, IServicePatient
+         
     {
 
 
@@ -20,7 +20,7 @@ namespace Service.PatientService
         static IUnitOfWork UOW = new UnitOfWork(DBF);
         PiContext pc;
 
-
+       
         public ServicePatient() : base(UOW)
         {
             pc = new PiContext();
@@ -31,6 +31,12 @@ namespace Service.PatientService
         {
             return UOW.getRepository<Patient>().GetById(UserID);
         }
+
+        public void Update(Patient r)
+        {
+            throw new NotImplementedException();
+        }
+
         public void updateUser(User u)
         {
             UOW.getRepository<User>().Update(u);

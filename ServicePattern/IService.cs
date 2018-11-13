@@ -19,7 +19,7 @@ namespace ServicePattern
         IEnumerable<T> GetMany(Expression<Func<T, bool>> where=null, Expression<Func<T, bool>> orderBy=null);
         T Get(Expression<Func<T, bool>> where);
 
-
+      
 
 
         void Commit();

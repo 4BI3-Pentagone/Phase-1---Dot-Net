@@ -133,6 +133,7 @@ C:\Users\chaim\Documents\GitHub\Phase-1---Dot-Net\Data\obj\Debug\Data.pdb
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Data.dll.config
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Data.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Data.pdb
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\DHTMLX.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Domain.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\EntityFramework.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\EntityFramework.SqlServer.dll
@@ -149,6 +150,8 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\MySql.Data.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Newtonsoft.Json.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Owin.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Domain.pdb
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\DHTMLX.pdb
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\DHTMLX.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\EntityFramework.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\Google.Protobuf.xml
@@ -169,5 +172,5 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\bin\Debug\fr\Microsoft.AspNet.Id
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\obj\Debug\Data.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\obj\Debug\Data.pdb
-C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\obj\Debug\Data.Migrations.a.resources
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\obj\Debug\Data.Migrations.gg.resources
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Data\obj\Debug\Data.csproj.GenerateResource.Cache

@@ -125,6 +125,7 @@ C:\Users\Emel\Documents\Visual Studio 2015\Projects\Phase-1---Dot-Net\Domain\obj
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Domain.dll.config
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Domain.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Domain.pdb
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\DHTMLX.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Google.Protobuf.dll
@@ -139,6 +140,8 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Microsoft.Owin.Secur
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\MySql.Data.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Newtonsoft.Json.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Owin.dll
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\DHTMLX.pdb
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\DHTMLX.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\Domain\bin\Debug\Google.Protobuf.xml

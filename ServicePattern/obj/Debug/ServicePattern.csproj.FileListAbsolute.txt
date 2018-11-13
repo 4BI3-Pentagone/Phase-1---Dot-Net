@@ -138,6 +138,7 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\ServicePatte
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\ServicePattern.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\ServicePattern.pdb
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\Data.dll
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\DHTMLX.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\Domain.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\EntityFramework.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\EntityFramework.SqlServer.dll
@@ -154,6 +155,8 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\Newtonsoft.J
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\Owin.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\Data.pdb
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\Domain.pdb
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\DHTMLX.pdb
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\DHTMLX.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\EntityFramework.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\ServicePattern\bin\Debug\Google.Protobuf.xml

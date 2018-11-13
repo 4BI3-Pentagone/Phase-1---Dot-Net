@@ -110,6 +110,7 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\GUI.exe.config
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\GUI.exe
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\GUI.pdb
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\Data.dll
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\DHTMLX.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\Domain.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\EntityFramework.dll
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\EntityFramework.SqlServer.dll
@@ -130,6 +131,8 @@ C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\Data.pdb
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\Domain.pdb
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\ServicePattern.pdb
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\Service.pdb
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\DHTMLX.pdb
+C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\DHTMLX.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\EntityFramework.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\djoe\Desktop\tt\Phase-1---Dot-Net\GUI\bin\Debug\Google.Protobuf.xml
