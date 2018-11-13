@@ -20,6 +20,13 @@ namespace Domain
     public class Doctor : User
     {
 
+<<<<<<< HEAD
+        public Speciality speciality { get; set; }
+
+     //   public virtual ICollection<Course> Courses { get; set; }
+        //public virtual ICollection<Chat> Conversations { get; set; }
+       // public virtual ICollection<Appointment> Appointments { get; set; }
+=======
         //  public virtual Speciality Speciality { get; set; }
         //   [ForeignKey("Speciality")]
         //  public int? SpecialityId { get; set; }
@@ -27,5 +34,6 @@ namespace Domain
         //   public virtual ICollection<Course> Courses { get; set; }
         public virtual ICollection<Chat> Conversations { get; set; }
         public virtual ICollection<Appointment> Appointments { get; set; }
+>>>>>>> 3bba1ba9699804c5097019f601711d2d51f211e7
     }
 }

@@ -31,16 +31,16 @@ namespace Service.CourseSer
             return  this.GetById(sp.GetById(id).course.CourseId);
         }
       // 
-        public int CourseNotDone(string d)
+        public int CourseNotDone(int d)
         {
 
-        Patient p = UOW.getRepository<Patient>().Get(P => P.Id == d);
+        //Patient p = UOW.getRepository<Patient>().Get(P => P.Id == d);
 
-        Course c = this.Get(C => C.CourseId == p.course.CourseId);
+        Course c = this.Get(C => C.CourseId == d);
 
             var ls = UOW.getRepository<Step>().GetMany(S => S.course.CourseId == c.CourseId);
             var fn = from l in ls
-                     where l.state == State.Done
+                     where l.state != State.Done
                      select l;
             return fn.Count();
 
@@ -63,10 +63,25 @@ namespace Service.CourseSer
                       ;
            return req;
         }
-       /* public Patient GetPatient(String d)
+        public IEnumerable<Step> GetSteps(string d)
         {
-            
-        }*/
+
+
+
+            Patient p = UOW.getRepository<Patient>().Get(P => P.Id == d);
+
+            Course c = this.Get(C => C.CourseId == p.course.CourseId);
+
+            var ls = UOW.getRepository<Step>().GetMany(S => S.course.CourseId == c.CourseId);
+            var fn = from l in ls
+                   //  where l.state == State.Done
+                     select l;
+            return fn;
+        }
+        /* public Patient GetPatient(String d)
+         {
+
+         }*/
         public  IEnumerable<Patient> GetMyPatients(String d)
         {
             //var facture = UOW.getRepository<Facture>().GetMany(F => F.Client == c);
