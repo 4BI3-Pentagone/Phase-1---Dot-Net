@@ -20,7 +20,7 @@ namespace ServicePattern
         T Get(Expression<Func<T, bool>> where);
        // virtual TEntity Find(params object[] keyValues);
 
-
+      
 
 
         void Commit();

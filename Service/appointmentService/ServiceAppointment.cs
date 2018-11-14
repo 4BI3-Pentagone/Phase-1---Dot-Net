@@ -11,10 +11,15 @@ using System.Text;
 using System.Threading.Tasks;
 namespace Service.appointmentService
 {
+<<<<<<< HEAD
+    public class ServiceAppointment : Service<Appointment>,IServiceAppointment
+      
+=======
     public class ServiceAppointment : Service<Appointment>, IServiceAppointment
 
+>>>>>>> 3bba1ba9699804c5097019f601711d2d51f211e7
     {
-
+       
 
 
             static DatabaseFactory DBF = new DatabaseFactory();
@@ -25,8 +30,12 @@ namespace Service.appointmentService
             public ServiceAppointment() : base(UOW)
             {
                 pc = new PiContext();
+<<<<<<< HEAD
+                
+=======
                // ps = new ServicePatient();
                // ds = new ServicesDoctor();
+>>>>>>> 3bba1ba9699804c5097019f601711d2d51f211e7
 
             }
         public void CreateAppointment(Appointment A)
@@ -70,6 +79,9 @@ namespace Service.appointmentService
 
     }
 
+<<<<<<< HEAD
+=======
 
     
 }
+>>>>>>> 3bba1ba9699804c5097019f601711d2d51f211e7

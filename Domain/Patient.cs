@@ -8,7 +8,10 @@ namespace Domain
 {
     public class Patient : User
     {
-        public int Insuranceid { get; set; }
+       
+        public string imageprofil { get; set; }
+
+        public string apropos { get; set; }
         public virtual Course course { get; set; }
         public virtual ICollection<Appointment> Appointments { get; set; }
         public virtual ICollection<Chat> Conversations { get; set; }
