@@ -29,9 +29,5 @@ namespace WebUI.Models
         {
             return new ApplicationDbContext();
         }
-
-        public System.Data.Entity.DbSet<Domain.Patient> Patients { get; set; }
-
-        public System.Data.Entity.DbSet<WebUI.Models.DocterModels> Doctors { get; set; }
     }
 }

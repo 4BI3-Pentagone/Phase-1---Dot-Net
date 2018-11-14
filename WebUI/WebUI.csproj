@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -25,6 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,10 +46,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-
-    <Reference Include="DinkToPdf, Version=1.0.8.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DinkToPdf.1.0.8\lib\netstandard1.6\DinkToPdf.dll</HintPath>
-    </Reference>
     <Reference Include="DHTMLX, Version=3.4.6717.29296, Culture=neutral, PublicKeyToken=53f24791214eb8ac, processorArchitecture=MSIL">
       <HintPath>..\packages\DHTMLX.Scheduler.NET.3.4.2.0\lib\DHTMLX.dll</HintPath>
       <Private>True</Private>
@@ -91,13 +89,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.13\lib\net452\MySql.Data.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="pdfcrowd">
-      <HintPath>..\pdfcrowd-4.3.5\pdfcrowd.dll</HintPath>
-    </Reference>
-    <Reference Include="Rotativa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Rotativa.1.6.4\lib\net40\Rotativa.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -232,21 +223,30 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\BasicSchedulerController.cs" />
+    <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
-    <Compile Include="Controllers\DoctorsController.cs" />
+    <Compile Include="Controllers\ForumController.cs" />
+    <Compile Include="Controllers\CalenderController.cs" />
+    <Compile Include="Controllers\DoctorController.cs" />
+    <Compile Include="Controllers\appnController.cs" />
+    <Compile Include="Controllers\DashboardDoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PatController.cs" />
     <Compile Include="Controllers\PatientController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
+    <Compile Include="Controllers\QuestionController.cs" />
+    <Compile Include="Controllers\StepsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CourseModel.cs" />
-    <Compile Include="Models\DocterModels.cs" />
+    <Compile Include="Models\DoctorModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\PostsVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -263,14 +263,30 @@
     <Content Include="Content\components\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\components\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\components\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="Content\ContactForm\css\style - Copy.css" />
+    <Content Include="Content\ContactForm\css\style.css" />
+    <Content Include="Content\ContactForm\images\banner.jpg" />
+    <Content Include="Content\Flaticone\forum.png" />
+    <Content Include="Content\ContactForm\images\contact.jpg" />
+    <Content Include="Content\Flaticone\phone.png" />
+    <Content Include="Content\Flaticone\stethoscope.png" />
+    <Content Include="Content\ContactForm\index.html" />
+    <Content Include="Content\Flaticone\home.png" />
+    <Content Include="Content\Flaticone\house.png" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\glyphicons.css" />
+    <Content Include="Content\Images\1.jpg" />
     <Content Include="Content\Images\45.png" />
+    <Content Include="Content\Images\48617735-stéthoscope-icône-le-diagnostic-médical-outil-médecin-les-soins-de-santé-style-moderne-plat-logo-concept-vector.jpg" />
     <Content Include="Content\Images\accp.jpg" />
     <Content Include="Content\Images\accp2.jpg" />
     <Content Include="Content\Images\accueil2.jpg" />
     <Content Include="Content\Images\accueil3.jpg" />
+    <Content Include="Content\Images\accueil33.jpg" />
     <Content Include="Content\Images\accueil_re.jpg" />
+    <Content Include="Content\Images\avatar.png" />
+    <Content Include="Content\Images\avatar2.png" />
+    <Content Include="Content\Images\avatar3.png" />
     <Content Include="Content\Images\back1.jpg" />
     <Content Include="Content\Images\back2.jpg" />
     <Content Include="Content\Images\back3.jpg" />
@@ -278,13 +294,22 @@
     <Content Include="Content\Images\background\backdefault.jpg" />
     <Content Include="Content\Images\backlogin.jpg" />
     <Content Include="Content\Images\backlogin1.jpg" />
+    <Content Include="Content\Images\computer-3343887_1280.jpg" />
     <Content Include="Content\Images\ctama-logo.jpg" />
+    <Content Include="Content\Images\dd.jpg" />
     <Content Include="Content\Images\doc.jpg" />
     <Content Include="Content\Images\doctor.jpg" />
+    <Content Include="Content\Images\eee.jpg" />
     <Content Include="Content\Images\EpAuth.png" />
     <Content Include="Content\Images\epione.png" />
     <Content Include="Content\Images\epione2.png" />
     <Content Include="Content\Images\error.jpg" />
+    <Content Include="Content\Images\images.jpg" />
+    <Content Include="Content\Images\kii.jpg" />
+    <Content Include="Content\Images\ffff.jpg" />
+    <Content Include="Content\Images\ffff.png" />
+    <Content Include="Content\Images\ki.jpg" />
+    <Content Include="Content\Images\kk.jpg" />
     <Content Include="Content\Images\logo.jpg" />
     <Content Include="Content\Images\logo1.png" />
     <Content Include="Content\Images\logoctama.png" />
@@ -295,6 +320,11 @@
     <Content Include="Content\Images\mini7.jpg" />
     <Content Include="Content\Images\Preloader_1.gif" />
     <Content Include="Content\Images\ra.jpg" />
+    <Content Include="Content\Images\rawpixel-602152-unsplash.jpg" />
+    <Content Include="Content\Images\responsive %281%29.png" />
+    <Content Include="Content\Images\responsive.png" />
+    <Content Include="Content\Images\ss.jpg" />
+    <Content Include="Content\Images\thermo.jpg" />
     <Content Include="Content\Images\téléchargement %281%29.png" />
     <Content Include="Content\Images\Users\45.png" />
     <Content Include="Content\Images\Users\logouser.png" />
@@ -303,6 +333,7 @@
     <Content Include="Content\IntefaceLogin\images\1.jpg" />
     <Content Include="Content\ionicons.css" />
     <Content Include="Content\LayoutStyle.css" />
+    <Content Include="Content\list.js" />
     <Content Include="Content\newSTBNET.gif" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
@@ -392,7 +423,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Rotativa\wkhtmltopdf.exe" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -674,8 +704,6 @@
     <Content Include="Content\IntefaceLogin\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\IntefaceLogin\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\IntefaceLogin\fonts\FontAwesome.otf" />
-    <Content Include="App_Browsers\qt.browser" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap4.js" />
@@ -756,7 +784,6 @@
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
     <Content Include="Scripts\esm\popper.min.js" />
-    <Content Include="Scripts\index.d.ts" />
     <Content Include="Scripts\inputmask\inputmask\bindings\inputmask.binding.js" />
     <Content Include="Scripts\inputmask\inputmask\dependencyLibs\inputmask.dependencyLib.jqlite.js" />
     <Content Include="Scripts\inputmask\inputmask\dependencyLibs\inputmask.dependencyLib.jquery.js" />
@@ -846,7 +873,6 @@
     <Content Include="Views\Patient\AccueilPatient.cshtml" />
     <Content Include="Views\Course\All.cshtml" />
     <Content Include="Views\Course\Create.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Question\Create2.cshtml" />
     <Content Include="Views\Question\Create.cshtml" />
     <Content Include="Views\Question\Index.cshtml" />
@@ -869,6 +895,7 @@
     <Content Include="Views\DashboardDoctor\Index.cshtml" />
     <Content Include="Views\DashboardDoctor\DoctorStat.cshtml" />
     <Content Include="Views\Course\CreateSteps.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\DashboardDoctor\Index.cshtml" />
     <Content Include="Views\DashboardDoctor\StatDoctor.cshtml" />
     <Content Include="Views\DashboardDoctor\StatDoctor2.cshtml" />
@@ -889,19 +916,16 @@
     <Content Include="Views\Steps\Edit.cshtml" />
     <Content Include="Views\Steps\Index.cshtml" />
     <Content Include="Views\Pat\CreateStep.cshtml" />
-    <Content Include="Views\Pat\getSteps.cshtml" />
-=======
-    <Content Include="Views\Patient\Create.cshtml" />
-    <Content Include="Views\BasicScheduler\Index.cshtml" />
-    <Content Include="Views\Doctors\Index.cshtml" />
-    <Content Include="Views\Doctors\Details.cshtml" />
-    <Content Include="Views\Doctors\Calendar_doc.cshtml" />
->>>>>>> 9805774bdfadedff2339aa67f0479e7dea31f104
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\DataTables\" />
-    <Folder Include="Views\Doctor\" />
+    <Folder Include="Content\TemplateAdmin\bower_components\" />
+    <Folder Include="Content\TemplateAdmin\build\" />
+    <Folder Include="Content\TemplateAdmin\dist\" />
+    <Folder Include="Content\TemplateAdmin\documentation\" />
+    <Folder Include="Content\TemplateAdmin\plugins\" />
+    <Folder Include="Content\Upload\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -909,6 +933,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{2936F783-8B62-46F0-B8F5-AC4D30793F88}</Project>
       <Project>{2936f783-8b62-46f0-b8f5-ac4d30793f88}</Project>
       <Name>Data</Name>
     </ProjectReference>
@@ -918,6 +943,7 @@
     </ProjectReference>
     <ProjectReference Include="..\ServicePattern\ServicePattern.csproj">
       <Project>{498E3058-8C85-4442-8C96-06135C96D03D}</Project>
+      <Project>{498e3058-8c85-4442-8c96-06135c96d03d}</Project>
       <Name>ServicePattern</Name>
     </ProjectReference>
     <ProjectReference Include="..\Service\Service.csproj">
@@ -925,21 +951,18 @@
       <Name>Service</Name>
     </ProjectReference>
   </ItemGroup>
-<<<<<<< HEAD
-<ItemGroup>
+  <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
-
-    <ItemGroup>
+  <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-=======
->>>>>>> 9805774bdfadedff2339aa67f0479e7dea31f104
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">

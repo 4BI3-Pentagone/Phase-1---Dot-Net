@@ -7,7 +7,6 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Data;
-using Rotativa;
 using Domain;
 using Microsoft.AspNet.Identity;
 using Service.CourseSer;
@@ -23,25 +22,9 @@ namespace WebUI.Controllers
         // GET: Pat
         public ActionResult Index()
         {
-       
-
             return View(
                 SC.GetMyPatients(User.Identity.GetUserId())
                 );
-        }
-        public ActionResult PrintViewToPdf()
-        {
-            var report = new ActionAsPdf("Index");
-            return report;
-        }
-        public ActionResult getSteps(string id)
-        {
-           int n = SC.CourseNotDone(2);
-
-           ViewData["n"] = n;
-            return View(SC.GetSteps(id));
-
-            
         }
 
         // GET: Pat/Details/5
@@ -91,13 +74,13 @@ namespace WebUI.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult CreateStep(int id,[Bind(Include = "StepId,treatment,state")] Step step)
+        public ActionResult CreateStep(string id,[Bind(Include = "StepId,treatment,state")] Step step)
         {
             int n = SC.CourseNotDone(id);
             if (ModelState.IsValid)
             {
-              //  Patient p = (Patient)db.Users.Find(id);
-                Course c = db.Courses.Find(id);
+                Patient p = (Patient)db.Users.Find(id);
+                Course c = db.Courses.Find(p.course.CourseId);
                
                 step.course = c;
                 db.Steps.Add(step);
@@ -164,58 +147,32 @@ namespace WebUI.Controllers
             return View(patient);
         }
 
-        // GET: Steps/Delete/5
-        public ActionResult Delete(int? id)
+        // GET: Pat/Delete/5
+        public ActionResult Delete(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Step step = db.Steps.Find(id);
-            if (step == null)
+            Patient patient = (Patient)db.Users.Find(id);
+            if (patient == null)
             {
                 return HttpNotFound();
             }
-            return View(step);
+            return View(patient);
         }
 
-        // POST: Steps/Delete/5
+        // POST: Pat/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(string id)
         {
-            Step step = db.Steps.Find(id);
-            db.Steps.Remove(step);
+            Patient patient = (Patient)db.Users.Find(id);
+            db.Users.Remove(patient);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
 
-        // GET: Pat/Delete/5
-        /*      public ActionResult Delete(string id)
-              {
-                  if (id == null)
-                  {
-                      return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-                  }
-                  Patient patient = (Patient)db.Users.Find(id);
-                  if (patient == null)
-                  {
-                      return HttpNotFound();
-                  }
-                  return View(patient);
-              }*/
-
-        // POST: Pat/Delete/5
-        /*  [HttpPost, ActionName("Delete")]
-          [ValidateAntiForgeryToken]
-          public ActionResult DeleteConfirmed(string id)
-          {
-              Patient patient = (Patient)db.Users.Find(id);
-              db.Users.Remove(patient);
-              db.SaveChanges();
-              return RedirectToAction("Index");
-          }
-          */
         protected override void Dispose(bool disposing)
         {
             if (disposing)
