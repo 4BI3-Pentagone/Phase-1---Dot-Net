@@ -74,13 +74,13 @@ namespace ServicePattern
             //return _repository.Get(where);
             return utwk.getRepository<TEntity>().Get(where);
         }
+
+      
+
+     
+
        
-
-
-
-
-
-
+       
         public void Commit()
         {
             try

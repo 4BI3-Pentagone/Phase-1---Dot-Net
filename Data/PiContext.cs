@@ -15,14 +15,15 @@ namespace Data
     public class PiContext : IdentityDbContext<User>
     {
         
-        public PiContext() : base("Name=PIC")
+        public PiContext() : base("Name=PIDB")
         {
             Database.SetInitializer(new ContexInit());
          }
 
-         public DbSet<Patient> Patients { get; set; }
-         public DbSet<Doctor> Doctors{ get; set; }
-     
+        //  public DbSet<Patient> Patients { get; set; }
+        //  public DbSet<Doctor> Doctors{ get; set; }
+   //     public DbSet<User> Users{ get; set; }
+
         public DbSet<Course> Courses { get; set; }
         public DbSet<Chat> Chats { get; set; }
         public DbSet<Message> Messages { get; set; }
